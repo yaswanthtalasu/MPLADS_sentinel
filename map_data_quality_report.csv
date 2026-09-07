@@ -1,0 +1,504 @@
+geographic_entity,state,constituency,matched_pc_id,matched_pc_name,mapping_status,coordinate_type,geo_source,validation_status,reason
+"ARARIA, Bihar",Bihar,ARARIA,1009,Araria,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FARIDKOT(SC), Punjab",Punjab,FARIDKOT(SC),309,Faridkot,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOLLAM, Kerala",Kerala,KOLLAM,3218,Kollam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JANJGIR CHAMPA(SC), Chhattisgarh",Chhattisgarh,JANJGIR CHAMPA(SC),2203,Janjgir,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DHARWAD, Karnataka",Karnataka,DHARWAD,2911,Dharwad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAGPUR, Maharashtra",Maharashtra,NAGPUR,2710,Nagpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SHAHJAHANPUR(SC), Uttar Pradesh",Uttar Pradesh,SHAHJAHANPUR(SC),927,Shahjahanpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAVELIKKARA(SC), Kerala",Kerala,MAVELIKKARA(SC),3216,Mavelikara,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAVER, Maharashtra",Maharashtra,RAVER,2704,Raver,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MANDI, Himachal Pradesh",Himachal Pradesh,MANDI,202,Mandi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GAUTAM BUDDHA NAGAR, Uttar Pradesh",Uttar Pradesh,GAUTAM BUDDHA NAGAR,913,Gautam Buddha Nagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BASIRHAT, West Bengal",West Bengal,BASIRHAT,1918,Basirhat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SIVAGANGA, Tamil Nadu",Tamil Nadu,SIVAGANGA,3331,Sivaganga,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAIPUR, Chhattisgarh",Chhattisgarh,RAIPUR,2208,Raipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FIROZPUR, Punjab",Punjab,FIROZPUR,310,Firozepur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KHARGONE(ST), Madhya Pradesh",Madhya Pradesh,KHARGONE(ST),2327,Khargone,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KORBA, Chhattisgarh",Chhattisgarh,KORBA,2204,Korba,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TENKASI(SC), Tamil Nadu",Tamil Nadu,TENKASI(SC),3337,Tenkasi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DAMOH, Madhya Pradesh",Madhya Pradesh,DAMOH,2307,Damoh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NIZAMABAD, Telangana",Telangana,NIZAMABAD,2804,Nizamabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KHUNTI(ST), Jharkhand",Jharkhand,KHUNTI(ST),2011,Khunti,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SABARKANTHA, Gujarat",Gujarat,SABARKANTHA,2405,Sabarkantha,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ARAKKONAM, Tamil Nadu",Tamil Nadu,ARAKKONAM,3307,Arakkonam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AGRA(SC), Uttar Pradesh",Uttar Pradesh,AGRA(SC),918,Agra,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAGALAND, Nagaland",Nagaland,NAGALAND,1301,Nagaland,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FATEHPUR SIKRI, Uttar Pradesh",Uttar Pradesh,FATEHPUR SIKRI,919,Fatehpur Sikri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANSWARA(ST), Rajasthan",Rajasthan,BANSWARA(ST),820,Banswara,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DINDIGUL, Tamil Nadu",Tamil Nadu,DINDIGUL,3322,Dindigul,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHITTOOR, Andhra Pradesh",Andhra Pradesh,CHITTOOR,2842,Chittoor,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SULTANPUR, Uttar Pradesh",Uttar Pradesh,SULTANPUR,938,Sultanpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARDOLI(ST), Gujarat",Gujarat,BARDOLI(ST),2423,Bardoli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ULUBERIA, West Bengal",West Bengal,ULUBERIA,1926,Uluberia,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SIKKIM, Sikkim",Sikkim,SIKKIM,1101,Sikkim,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ARUNACHAL EAST, Arunachal Pradesh",Arunachal Pradesh,ARUNACHAL EAST,1202,Arunachal East,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MADURAI, Tamil Nadu",Tamil Nadu,MADURAI,3332,Madurai,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VAISHALI, Bihar",Bihar,VAISHALI,1016,Vaishali,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"Puducherry, Puducherry",Puducherry,Puducherry,3401,Puducherry,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BOLPUR(SC), West Bengal",West Bengal,BOLPUR(SC),1941,Bolpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"Diphu (ST), Assam",Assam,Diphu (ST),1803,Autonomous District,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FIROZABAD, Uttar Pradesh",Uttar Pradesh,FIROZABAD,920,Firozabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SHAHDOL (ST), Madhya Pradesh",Madhya Pradesh,SHAHDOL (ST),2312,Shahdol,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAGINA(SC), Uttar Pradesh",Uttar Pradesh,NAGINA(SC),905,Nagina,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAJGARH, Madhya Pradesh",Madhya Pradesh,RAJGARH,2320,Rajgarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JHANJHARPUR, Bihar",Bihar,JHANJHARPUR,1007,Jhanjharpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANDA, Uttar Pradesh",Uttar Pradesh,BANDA,948,Banda,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BIRBHUM, West Bengal",West Bengal,BIRBHUM,1942,Birbhum,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JOYNAGAR(SC), West Bengal",West Bengal,JOYNAGAR(SC),1919,Jaynagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAJNANDGAON, Chhattisgarh",Chhattisgarh,RAJNANDGAON,2206,Rajnandgaon,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TIRUPATI(SC), Andhra Pradesh",Andhra Pradesh,TIRUPATI(SC),2840,Tirupati,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SAGAR, Madhya Pradesh",Madhya Pradesh,SAGAR,2305,Sagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PATNA SAHIB, Bihar",Bihar,PATNA SAHIB,1030,Patna Sahib,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ANAND, Gujarat",Gujarat,ANAND,2416,Anand,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MANDLA(ST), Madhya Pradesh",Madhya Pradesh,MANDLA(ST),2314,Mandla,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MACHHLISHAHR(SC), Uttar Pradesh",Uttar Pradesh,MACHHLISHAHR(SC),974,Machhlishahr,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANCHEEPURAM(SC), Tamil Nadu",Tamil Nadu,KANCHEEPURAM(SC),3306,Kancheepuram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AONLA, Uttar Pradesh",Uttar Pradesh,AONLA,924,Aonla,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BILASPUR, Chhattisgarh",Chhattisgarh,BILASPUR,2205,Bilaspur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MATHURAPUR(SC), West Bengal",West Bengal,MATHURAPUR(SC),1920,Mathurapur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BUXAR, Bihar",Bihar,BUXAR,1033,Buxar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ANANDPUR SAHIB, Punjab",Punjab,ANANDPUR SAHIB,306,Anandpur Sahib,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHARATPUR(SC), Rajasthan",Rajasthan,BHARATPUR(SC),809,Bharatpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HATHRAS (SC), Uttar Pradesh",Uttar Pradesh,HATHRAS (SC),916,Hathras,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAHASAMUND, Chhattisgarh",Chhattisgarh,MAHASAMUND,2209,Mahasamund,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SALEMPUR, Uttar Pradesh",Uttar Pradesh,SALEMPUR,971,Salempur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KALAHANDI, Odisha",Odisha,KALAHANDI,2111,Kalahandi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AMRITSAR, Punjab",Punjab,AMRITSAR,302,Amritsar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SHIMLA (SC), Himachal Pradesh",Himachal Pradesh,SHIMLA (SC),204,Shimla,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HARDOI (SC), Uttar Pradesh",Uttar Pradesh,HARDOI (SC),931,Hardoi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MANDSOUR, Madhya Pradesh",Madhya Pradesh,MANDSOUR,2323,Mandsaur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HOSHIARPUR(SC), Punjab",Punjab,HOSHIARPUR(SC),305,Hoshiarpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DIAMOND HARBOUR, West Bengal",West Bengal,DIAMOND HARBOUR,1921,Diamond Harbour,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAIGARH(ST), Chhattisgarh",Chhattisgarh,RAIGARH(ST),2202,Raigarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAIPUR, Rajasthan",Rajasthan,JAIPUR,807,Jaipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KHAJURAHO, Madhya Pradesh",Madhya Pradesh,KHAJURAHO,2308,Khajuraho,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DEORIA, Uttar Pradesh",Uttar Pradesh,DEORIA,966,Deoria,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAGAUR, Rajasthan",Rajasthan,NAGAUR,814,Nagaur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TAMLUK, West Bengal",West Bengal,TAMLUK,1930,Tamluk,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ERODE, Tamil Nadu",Tamil Nadu,ERODE,3317,Erode,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BAHARAMPUR, West Bengal",West Bengal,BAHARAMPUR,1910,Baharampur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PURVI CHAMPARAN, Bihar",Bihar,PURVI CHAMPARAN,1003,Purvi Champaran,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SIDHI, Madhya Pradesh",Madhya Pradesh,SIDHI,2311,Sidhi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BETUL(ST), Madhya Pradesh",Madhya Pradesh,BETUL(ST),2329,Betul,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHANDAULI, Uttar Pradesh",Uttar Pradesh,CHANDAULI,976,Chandauli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DHULE, Maharashtra",Maharashtra,DHULE,2702,Dhule,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAHARAJGANJ_UP, Uttar Pradesh",Uttar Pradesh,MAHARAJGANJ_UP,963,Maharajganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TEHRI GARHWAL, Uttarakhand",Uttarakhand,TEHRI GARHWAL,501,Tehri Garhwal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"UNNAO, Uttar Pradesh",Uttar Pradesh,UNNAO,933,Unnao,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TURA, Meghalaya",Meghalaya,TURA,1702,Tura,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ARANI, Tamil Nadu",Tamil Nadu,ARANI,3312,Arani,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KHANDWA, Madhya Pradesh",Madhya Pradesh,KHANDWA,2328,Khandwa,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"OUTER MANIPUR(ST), Manipur",Manipur,OUTER MANIPUR(ST),1402,Outer Manipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TIRUVANNAMALAI, Tamil Nadu",Tamil Nadu,TIRUVANNAMALAI,3311,Tiruvannamalai,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANPUR, Uttar Pradesh",Uttar Pradesh,KANPUR,943,Kanpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANKA, Bihar",Bihar,BANKA,1027,Banka,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SUNDARGARH (ST), Odisha",Odisha,SUNDARGARH (ST),2102,Sundargarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHHINDWARA, Madhya Pradesh",Madhya Pradesh,CHHINDWARA,2316,Chhindwara,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AJMER, Rajasthan",Rajasthan,AJMER,813,Ajmer,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DHUBRI, Assam",Assam,DHUBRI,1804,Dhubri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SREERAMPUR, West Bengal",West Bengal,SREERAMPUR,1927,Sreerampur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BASTAR(ST), Chhattisgarh",Chhattisgarh,BASTAR(ST),2210,Bastar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SASARAM(SC), Bihar",Bihar,SASARAM(SC),1034,Sasaram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DARJEELING, West Bengal",West Bengal,DARJEELING,1904,Darjeeling,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GUNA, Madhya Pradesh",Madhya Pradesh,GUNA,2304,Guna,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RANCHI, Jharkhand",Jharkhand,RANCHI,2008,Ranchi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DHAR(ST), Madhya Pradesh",Madhya Pradesh,DHAR(ST),2325,Dhar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANGRA, Himachal Pradesh",Himachal Pradesh,KANGRA,201,Kangra,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MORENA, Madhya Pradesh",Madhya Pradesh,MORENA,2301,Morena,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"POLLACHI, Tamil Nadu",Tamil Nadu,POLLACHI,3321,Pollachi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHATINDA, Punjab",Punjab,BHATINDA,311,Bathinda,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SARGUJA(ST), Chhattisgarh",Chhattisgarh,SARGUJA(ST),2201,Surguja,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHONGIR, Telangana",Telangana,BHONGIR,2814,Bhuvanagiri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RANAGHAT(SC), West Bengal",West Bengal,RANAGHAT(SC),1913,Ranaghat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JALGAON, Maharashtra",Maharashtra,JALGAON,2703,Jalgaon,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"LAKHIMPUR, Assam",Assam,LAKHIMPUR,1814,Lakhimpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MIZORAM (ST), Mizoram",Mizoram,MIZORAM (ST),1501,Mizoram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"UDAIPUR(ST), Rajasthan",Rajasthan,UDAIPUR(ST),819,Udaipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOTA, Rajasthan",Rajasthan,KOTA,824,Kota,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHITTORGARH, Rajasthan",Rajasthan,CHITTORGARH,821,Chittorgarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MEERUT, Uttar Pradesh",Uttar Pradesh,MEERUT,910,Meerut,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GURGAON, Haryana",Haryana,GURGAON,609,Gurgaon,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAE BARELI, Uttar Pradesh",Uttar Pradesh,RAE BARELI,936,Rae Bareli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KRISHNANAGAR, West Bengal",West Bengal,KRISHNANAGAR,1912,Krishnanagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SIKAR, Rajasthan",Rajasthan,SIKAR,805,Sikar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ETAH, Uttar Pradesh",Uttar Pradesh,ETAH,922,Etah,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AURANGABAD_BR, Bihar",Bihar,AURANGABAD_BR,1037,Aurangabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DUMKA(ST), Jharkhand",Jharkhand,DUMKA(ST),2002,Dumka,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FARRUKHABAD, Uttar Pradesh",Uttar Pradesh,FARRUKHABAD,940,Farrukhabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BAREILLY, Uttar Pradesh",Uttar Pradesh,BAREILLY,925,Bareilly,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AMBEDKAR NAGAR, Uttar Pradesh",Uttar Pradesh,AMBEDKAR NAGAR,955,Ambedkar Nagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DURG, Chhattisgarh",Chhattisgarh,DURG,2207,Durg,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ALWAR, Rajasthan",Rajasthan,ALWAR,808,Alwar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAJAMPET, Andhra Pradesh",Andhra Pradesh,RAJAMPET,2841,Rajampet,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"IDUKKI, Kerala",Kerala,IDUKKI,3213,Idukki,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KAISERGANJ, Uttar Pradesh",Uttar Pradesh,KAISERGANJ,957,Kaiserganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PATIALA, Punjab",Punjab,PATIALA,313,Patiala,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SHIRUR, Maharashtra",Maharashtra,SHIRUR,2736,Shirur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TIKAMGARH(SC), Madhya Pradesh",Madhya Pradesh,TIKAMGARH(SC),2306,Tikamgarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GUWAHATI, Assam",Assam,GUWAHATI,1807,Gauhati,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARASAT, West Bengal",West Bengal,BARASAT,1917,Barasat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BASTI, Uttar Pradesh",Uttar Pradesh,BASTI,961,Basti,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOLKATA DAKSHIN, West Bengal",West Bengal,KOLKATA DAKSHIN,1923,Kolkata Dakshin,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAJKOT, Gujarat",Gujarat,RAJKOT,2410,Rajkot,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAMPUR, Uttar Pradesh",Uttar Pradesh,RAMPUR,907,Rampur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GHAZIABAD, Uttar Pradesh",Uttar Pradesh,GHAZIABAD,912,Ghaziabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AMROHA, Uttar Pradesh",Uttar Pradesh,AMROHA,909,Amroha,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHIWANI MAHENDRAGARH, Haryana",Haryana,BHIWANI MAHENDRAGARH,608,Bhiwani-Mahendragarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JALAUN(SC), Uttar Pradesh",Uttar Pradesh,JALAUN(SC),945,Jalaun,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AMRELI, Gujarat",Gujarat,AMRELI,2414,Amreli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HAMIRPUR_HP, Himachal Pradesh",Himachal Pradesh,HAMIRPUR_HP,203,Hamirpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BIKANER(SC), Rajasthan",Rajasthan,BIKANER(SC),802,Bikaner,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HAMIRPUR_UP, Uttar Pradesh",Uttar Pradesh,HAMIRPUR_UP,947,Hamirpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ARAKU(ST), Andhra Pradesh",Andhra Pradesh,ARAKU(ST),2818,Araku,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"INDORE, Madhya Pradesh",Madhya Pradesh,INDORE,2326,Indore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KURUKSHETRA, Haryana",Haryana,KURUKSHETRA,602,Kurukshetra,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TIRUPPUR, Tamil Nadu",Tamil Nadu,TIRUPPUR,3318,Tiruppur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARMER, Rajasthan",Rajasthan,BARMER,817,Barmer,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JALORE, Rajasthan",Rajasthan,JALORE,818,Jalore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ETAWAH(SC), Uttar Pradesh",Uttar Pradesh,ETAWAH(SC),941,Etawah,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KISHANGANJ, Bihar",Bihar,KISHANGANJ,1010,Kishanganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MUZAFFARNAGAR, Uttar Pradesh",Uttar Pradesh,MUZAFFARNAGAR,903,Muzaffarnagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ROHTAK, Haryana",Haryana,ROHTAK,607,Rohtak,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAMAKKAL, Tamil Nadu",Tamil Nadu,NAMAKKAL,3316,Namakkal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KACHCHH(SC), Gujarat",Gujarat,KACHCHH(SC),2401,Kachchh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TIRUVALLUR(SC), Tamil Nadu",Tamil Nadu,TIRUVALLUR(SC),3301,Thiruvallur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ROBERTSGANJ(SC), Uttar Pradesh",Uttar Pradesh,ROBERTSGANJ(SC),980,Robertsganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"UJJAIN(SC), Madhya Pradesh",Madhya Pradesh,UJJAIN(SC),2322,Ujjain,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"THANJAVUR, Tamil Nadu",Tamil Nadu,THANJAVUR,3330,Thanjavur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MUZAFFARPUR, Bihar",Bihar,MUZAFFARPUR,1015,Muzaffarpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PURNEA, Bihar",Bihar,PURNEA,1012,Purnia,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KALLAKURICHI, Tamil Nadu",Tamil Nadu,KALLAKURICHI,3314,Kallakurichi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KAUSHAMBI(SC), Uttar Pradesh",Uttar Pradesh,KAUSHAMBI(SC),950,Kaushambi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JHUNJHUNU, Rajasthan",Rajasthan,JHUNJHUNU,804,Jhunjhunu,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BAGALKOT, Karnataka",Karnataka,BAGALKOT,2903,Bagalkot,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HOWRAH, West Bengal",West Bengal,HOWRAH,1925,Howrah,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHILWARA, Rajasthan",Rajasthan,BHILWARA,823,Bhilwara,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOPPAL, Karnataka",Karnataka,KOPPAL,2908,Koppal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MACHILIPATNAM, Andhra Pradesh",Andhra Pradesh,MACHILIPATNAM,2828,Machilipatnam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JHANSI, Uttar Pradesh",Uttar Pradesh,JHANSI,946,Jhansi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DHAURAHRA, Uttar Pradesh",Uttar Pradesh,DHAURAHRA,929,Dhaurahra,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CUDDALORE, Tamil Nadu",Tamil Nadu,CUDDALORE,3326,Cuddalore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KHAGARIA, Bihar",Bihar,KHAGARIA,1025,Khagaria,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MATHURA, Uttar Pradesh",Uttar Pradesh,MATHURA,917,Mathura,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"LALGANJ (SC), Uttar Pradesh",Uttar Pradesh,LALGANJ (SC),968,Lalganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"UDUPI CHIKMAGALUR, Karnataka",Karnataka,UDUPI CHIKMAGALUR,2915,Udupi Chikmagalur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MISRIKH(SC), Uttar Pradesh",Uttar Pradesh,MISRIKH(SC),932,Misrikh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SANGRUR, Punjab",Punjab,SANGRUR,312,Sangrur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HISAR, Haryana",Haryana,HISAR,604,Hisar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"LUCKNOW, Uttar Pradesh",Uttar Pradesh,LUCKNOW,935,Lucknow,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SUPAUL, Bihar",Bihar,SUPAUL,1008,Supaul,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NEW DELHI, Delhi",Delhi,NEW DELHI,704,New Delhi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"THIRUVANANTHAPURAM, Kerala",Kerala,THIRUVANANTHAPURAM,3220,Thiruvananthapuram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HOOGHLY, West Bengal",West Bengal,HOOGHLY,1928,Hooghly,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JHARGRAM(ST), West Bengal",West Bengal,JHARGRAM(ST),1933,Jhargram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DAHOD(ST), Gujarat",Gujarat,DAHOD(ST),2419,Dahod,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KASARAGOD, Kerala",Kerala,KASARAGOD,3201,Kasaragod,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NOWGONG, Assam",Assam,NOWGONG,1810,Nowgong,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHAVNAGAR, Gujarat",Gujarat,BHAVNAGAR,2415,Bhavnagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"UDHAMPUR, Jammu And Kashmir",Jammu And Kashmir,UDHAMPUR,105,Udhampur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARABANKI(SC), Uttar Pradesh",Uttar Pradesh,BARABANKI(SC),953,Barabanki,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MADHUBANI, Bihar",Bihar,MADHUBANI,1006,Madhubani,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAMANATHAPURAM, Tamil Nadu",Tamil Nadu,RAMANATHAPURAM,3335,Ramanathapuram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JADAVPUR, West Bengal",West Bengal,JADAVPUR,1922,Jadavpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SITAPUR, Uttar Pradesh",Uttar Pradesh,SITAPUR,930,Sitapur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"Sonitpur, Assam",Assam,Sonitpur,1809,Tezpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"OSMANABAD, Maharashtra",Maharashtra,OSMANABAD,2740,Osmanabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"LOHARDAGA(ST), Jharkhand",Jharkhand,LOHARDAGA(ST),2012,Lohardaga,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHARUCH, Gujarat",Gujarat,BHARUCH,2422,Bharuch,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SRIKAKULAM, Andhra Pradesh",Andhra Pradesh,SRIKAKULAM,2819,Srikakulam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BALLIA, Uttar Pradesh",Uttar Pradesh,BALLIA,972,Ballia,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KUSHI NAGAR, Uttar Pradesh",Uttar Pradesh,KUSHI NAGAR,965,Kushi Nagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANGALORE RURAL, Karnataka",Karnataka,BANGALORE RURAL,2923,Bangalore Rural,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VADODARA, Gujarat",Gujarat,VADODARA,2420,Vadodara,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHELVELLA, Telangana",Telangana,CHELVELLA,2810,Chevella,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SIWAN, Bihar",Bihar,SIWAN,1018,Siwan,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HAVERI, Karnataka",Karnataka,HAVERI,2910,Haveri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DAVANAGERE, Karnataka",Karnataka,DAVANAGERE,2913,Davangere,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GONDA, Uttar Pradesh",Uttar Pradesh,GONDA,959,Gonda,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"INNER MANIPUR, Manipur",Manipur,INNER MANIPUR,1401,Inner Manipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RATLAM(ST), Madhya Pradesh",Madhya Pradesh,RATLAM(ST),2324,Ratlam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FAIZABAD, Uttar Pradesh",Uttar Pradesh,FAIZABAD,954,Faizabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SHIMOGA, Karnataka",Karnataka,SHIMOGA,2914,Shimoga,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SURENDRANAGAR, Gujarat",Gujarat,SURENDRANAGAR,2409,Surendranagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANGALORE SOUTH, Karnataka",Karnataka,BANGALORE SOUTH,2926,Bangalore South,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PARBHANI, Maharashtra",Maharashtra,PARBHANI,2717,Parbhani,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SHILLONG, Meghalaya",Meghalaya,SHILLONG,1701,Shillong,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PERAMBALUR, Tamil Nadu",Tamil Nadu,PERAMBALUR,3325,Perambalur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ARAMBAG(SC), West Bengal",West Bengal,ARAMBAG(SC),1929,Arambagh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DAKSHINA KANNADA, Karnataka",Karnataka,DAKSHINA KANNADA,2917,Dakshina Kannada,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GHAZIPUR, Uttar Pradesh",Uttar Pradesh,GHAZIPUR,975,Ghazipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHAGALPUR, Bihar",Bihar,BHAGALPUR,1026,Bhagalpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GHOSI, Uttar Pradesh",Uttar Pradesh,GHOSI,970,Ghosi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MORADABAD, Uttar Pradesh",Uttar Pradesh,MORADABAD,906,Moradabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAMMU, Jammu And Kashmir",Jammu And Kashmir,JAMMU,106,Jammu,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KADAPA, Andhra Pradesh",Andhra Pradesh,KADAPA,2838,Kadapa,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GOPALGANJ (SC), Bihar",Bihar,GOPALGANJ (SC),1017,Gopalganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"THOOTHUKKUDI, Tamil Nadu",Tamil Nadu,THOOTHUKKUDI,3336,Thoothukudi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PATAN, Gujarat",Gujarat,PATAN,2403,Patan,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KORAPUT(ST), Odisha",Odisha,KORAPUT(ST),2121,Koraput,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SIRSA(SC), Haryana",Haryana,SIRSA(SC),603,Sirsa,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KARUR, Tamil Nadu",Tamil Nadu,KARUR,3323,Karur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BADAUN, Uttar Pradesh",Uttar Pradesh,BADAUN,923,Badaun,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SRIPERUMBUDUR, Tamil Nadu",Tamil Nadu,SRIPERUMBUDUR,3305,Sriperumbudur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MURSHIDABAD, West Bengal",West Bengal,MURSHIDABAD,1911,Murshidabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAHABUBNAGAR, Telangana",Telangana,MAHABUBNAGAR,2811,Mahabubnagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JUNAGADH, Gujarat",Gujarat,JUNAGADH,2413,Junagadh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAJSAMAND, Rajasthan",Rajasthan,RAJSAMAND,822,Rajsamand,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"LATUR(SC), Maharashtra",Maharashtra,LATUR(SC),2741,Latur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BALURGHAT, West Bengal",West Bengal,BALURGHAT,1906,Balurghat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VIRUDHUNAGAR, Tamil Nadu",Tamil Nadu,VIRUDHUNAGAR,3334,Virudhunagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"WARANGEL(SC), Telangana",Telangana,WARANGEL(SC),2815,Warangal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAVAL, Maharashtra",Maharashtra,MAVAL,2733,Maval,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BALAGHAT, Madhya Pradesh",Madhya Pradesh,BALAGHAT,2315,Balaghat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AKOLA, Maharashtra",Maharashtra,AKOLA,2706,Akola,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHADOHI, Uttar Pradesh",Uttar Pradesh,BHADOHI,978,Bhadohi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ALMORA(SC), Uttarakhand",Uttarakhand,ALMORA(SC),503,Almora,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANGALORE NORTH, Karnataka",Karnataka,BANGALORE NORTH,2924,Bangalore North,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KHEDA, Gujarat",Gujarat,KHEDA,2417,Kheda,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GURDASPUR, Punjab",Punjab,GURDASPUR,301,Gurdaspur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MEDAK, Telangana",Telangana,MEDAK,2806,Medak,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KURNOOL, Andhra Pradesh",Andhra Pradesh,KURNOOL,2835,Kurnool,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BAHRAICH(SC), Uttar Pradesh",Uttar Pradesh,BAHRAICH(SC),956,Bahraich,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TUMKUR, Karnataka",Karnataka,TUMKUR,2919,Tumkur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BULANDSHAHR(SC), Uttar Pradesh",Uttar Pradesh,BULANDSHAHR(SC),914,Bulandshahr,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"LUDHIANA, Punjab",Punjab,LUDHIANA,307,Ludhiana,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAINITAL UDHAM SINGH NAG., Uttarakhand",Uttarakhand,NAINITAL UDHAM SINGH NAG.,504,Nainital-Udhamsingh Nagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GHATAL, West Bengal",West Bengal,GHATAL,1932,Ghatal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PALAMU(SC), Jharkhand",Jharkhand,PALAMU(SC),2013,Palamu,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VILUPPURAM(SC), Tamil Nadu",Tamil Nadu,VILUPPURAM(SC),3313,Viluppuram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAHESANA, Gujarat",Gujarat,MAHESANA,2404,Mahesana,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"REWA, Madhya Pradesh",Madhya Pradesh,REWA,2310,Rewa,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VALMIKI NAGAR, Bihar",Bihar,VALMIKI NAGAR,1001,Valmiki Nagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HINDUPUR, Andhra Pradesh",Andhra Pradesh,HINDUPUR,2837,Hindupur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DARBHANGA, Bihar",Bihar,DARBHANGA,1014,Darbhanga,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PHULPUR, Uttar Pradesh",Uttar Pradesh,PHULPUR,951,Phulpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"UTTARA KANNADA, Karnataka",Karnataka,UTTARA KANNADA,2912,Uttara Kannada,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARDHAMAN PURBA(SC), West Bengal",West Bengal,BARDHAMAN PURBA(SC),1938,Bardhaman Purba,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANDHAMAL, Odisha",Odisha,KANDHAMAL,2113,Kandhamal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CUTTACK, Odisha",Odisha,CUTTACK,2114,Cuttack,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOLKATA UTTAR, West Bengal",West Bengal,KOLKATA UTTAR,1924,Kolkata Uttar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KHERI, Uttar Pradesh",Uttar Pradesh,KHERI,928,Kheri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHOPAL, Madhya Pradesh",Madhya Pradesh,BHOPAL,2319,Bhopal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AKBARPUR, Uttar Pradesh",Uttar Pradesh,AKBARPUR,944,Akbarpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NELLORE(SC), Andhra Pradesh",Andhra Pradesh,NELLORE(SC),2839,Nellore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAUNPUR, Uttar Pradesh",Uttar Pradesh,JAUNPUR,973,Jaunpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DEWAS(SC), Madhya Pradesh",Madhya Pradesh,DEWAS(SC),2321,Dewas,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANKER(ST), Chhattisgarh",Chhattisgarh,KANKER(ST),2211,Kanker,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DHARAMAPURI, Tamil Nadu",Tamil Nadu,DHARAMAPURI,3310,Dharmapuri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AMALAPURAM(SC), Andhra Pradesh",Andhra Pradesh,AMALAPURAM(SC),2824,Amalapuram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BEED, Maharashtra",Maharashtra,BEED,2739,Beed,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SANGLI, Maharashtra",Maharashtra,SANGLI,2744,Sangli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANGALORE CENTRAL, Karnataka",Karnataka,BANGALORE CENTRAL,2925,Bangalore Central,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JALANDHAR(SC), Punjab",Punjab,JALANDHAR(SC),304,Jalandhar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TIRUCHIRAPPALLI, Tamil Nadu",Tamil Nadu,TIRUCHIRAPPALLI,3324,Tiruchirappalli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAICHUR(ST), Karnataka",Karnataka,RAICHUR(ST),2906,Raichur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NILGIRIS(SC), Tamil Nadu",Tamil Nadu,NILGIRIS(SC),3319,Nilgiris,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PANCHMAHAL, Gujarat",Gujarat,PANCHMAHAL,2418,Panchmahal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PRATAPGARH, Uttar Pradesh",Uttar Pradesh,PRATAPGARH,939,Pratapgarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PORBANDAR, Gujarat",Gujarat,PORBANDAR,2411,Porbandar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HOSHANGABAD, Madhya Pradesh",Madhya Pradesh,HOSHANGABAD,2317,Hoshangabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ELURU, Andhra Pradesh",Andhra Pradesh,ELURU,2827,Eluru,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MADHEPURA, Bihar",Bihar,MADHEPURA,1013,Madhepura,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KARAKAT, Bihar",Bihar,KARAKAT,1035,Karakat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VARANASI, Uttar Pradesh",Uttar Pradesh,VARANASI,977,Varanasi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ANANTAPUR, Andhra Pradesh",Andhra Pradesh,ANANTAPUR,2836,Anantapuramu,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MEDINIPUR, West Bengal",West Bengal,MEDINIPUR,1934,Medinipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SANT KABIR NAGAR, Uttar Pradesh",Uttar Pradesh,SANT KABIR NAGAR,962,Sant Kabir Nagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"EAST DELHI, Delhi",Delhi,EAST DELHI,703,East Delhi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SURAT, Gujarat",Gujarat,SURAT,2424,Surat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAGARKURNOOL(SC), Telangana",Telangana,NAGARKURNOOL(SC),2812,Nagarkurnool,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SITAMARHI, Bihar",Bihar,SITAMARHI,1005,Sitamarhi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MYSORE, Karnataka",Karnataka,MYSORE,2921,Mysore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAMNAGAR, Gujarat",Gujarat,JAMNAGAR,2412,Jamnagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TIRUNELVELI, Tamil Nadu",Tamil Nadu,TIRUNELVELI,3338,Tirunelveli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GAYA (SC), Bihar",Bihar,GAYA (SC),1038,Gaya,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MOHANLALGANJ(SC), Uttar Pradesh",Uttar Pradesh,MOHANLALGANJ(SC),934,Mohanlalganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KARIMNAGAR, Telangana",Telangana,KARIMNAGAR,2803,Karimnagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHIKBALLAPUR, Karnataka",Karnataka,CHIKBALLAPUR,2927,Chikballapur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AMRAVATI(SC), Maharashtra",Maharashtra,AMRAVATI(SC),2707,Amravati,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VALSAD(ST), Gujarat",Gujarat,VALSAD(ST),2426,Valsad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FATEHGARH SAHIB(SC), Punjab",Punjab,FATEHGARH SAHIB(SC),308,Fatehgarh Sahib,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MALKAJGIRI, Telangana",Telangana,MALKAJGIRI,2807,Malkajgiri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VIDISHA, Madhya Pradesh",Madhya Pradesh,VIDISHA,2318,Vidisha,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ALAPPUZHA, Kerala",Kerala,ALAPPUZHA,3215,Alappuzha,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAHABUBABAD, Telangana",Telangana,MAHABUBABAD,2816,Mahabubabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHANDIGARH, Chandigarh",Chandigarh,CHANDIGARH,401,Chandigarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GIRIDIH, Jharkhand",Jharkhand,GIRIDIH,2006,Giridih,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHANDRAPUR, Maharashtra",Maharashtra,CHANDRAPUR,2713,Chandrapur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KEONJHAR(ST), Odisha",Odisha,KEONJHAR(ST),2104,Keonjhar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AHMEDNAGAR, Maharashtra",Maharashtra,AHMEDNAGAR,2737,Ahmednagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAIGAD, Maharashtra",Maharashtra,RAIGAD,2732,Raigad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DUM DUM, West Bengal",West Bengal,DUM DUM,1916,Dum Dum,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHUBANESWAR, Odisha",Odisha,BHUBANESWAR,2118,Bhubaneswar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOLAR(SC), Karnataka",Karnataka,KOLAR(SC),2928,Kolar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BIJNOR, Uttar Pradesh",Uttar Pradesh,BIJNOR,904,Bijnor,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AURANGABAD_MH, Maharashtra",Maharashtra,AURANGABAD_MH,2719,Aurangabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARPETA, Assam",Assam,BARPETA,1806,Barpeta,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NANDYAL, Andhra Pradesh",Andhra Pradesh,NANDYAL,2834,Nandyal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ALATHUR(SC), Kerala",Kerala,ALATHUR(SC),3209,Alathur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANNUR, Kerala",Kerala,KANNUR,3202,Kannur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ALIGARH, Uttar Pradesh",Uttar Pradesh,ALIGARH,915,Aligarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JALNA, Maharashtra",Maharashtra,JALNA,2718,Jalna,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAGAPATTINAM(SC), Tamil Nadu",Tamil Nadu,NAGAPATTINAM(SC),3329,Nagapattinam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"WAYANAD, Kerala",Kerala,WAYANAD,3204,Wayanad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SONEPAT, Haryana",Haryana,SONEPAT,606,Sonipat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AMETHI, Uttar Pradesh",Uttar Pradesh,AMETHI,937,Amethi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VIZIANAGARAM, Andhra Pradesh",Andhra Pradesh,VIZIANAGARAM,2820,Vizianagaram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PALI, Rajasthan",Rajasthan,PALI,815,Pali,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SHIRDI(SC), Maharashtra",Maharashtra,SHIRDI(SC),2738,Shirdi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHIDAMBARAM(SC), Tamil Nadu",Tamil Nadu,CHIDAMBARAM(SC),3327,Chidambaram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JORHAT, Assam",Assam,JORHAT,1812,Jorhat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHURU, Rajasthan",Rajasthan,CHURU,803,Churu,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KAKINADA, Andhra Pradesh",Andhra Pradesh,KAKINADA,2823,Kakinada,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SATNA, Madhya Pradesh",Madhya Pradesh,SATNA,2309,Satna,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAYILADUTHURAI, Tamil Nadu",Tamil Nadu,MAYILADUTHURAI,3328,Mayiladuturai,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ATTINGAL, Kerala",Kerala,ATTINGAL,3219,Attingal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"WEST DELHI, Delhi",Delhi,WEST DELHI,706,West Delhi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PATHANAMTHITTA, Kerala",Kerala,PATHANAMTHITTA,3217,Pathanamthitta,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAHARAJGANJ_BR, Bihar",Bihar,MAHARAJGANJ_BR,1019,Maharajganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SHEOHAR, Bihar",Bihar,SHEOHAR,1004,Sheohar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANASKANTHA, Gujarat",Gujarat,BANASKANTHA,2402,Banaskantha,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANNAUJ, Uttar Pradesh",Uttar Pradesh,KANNAUJ,942,Kannauj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ASKA, Odisha",Odisha,ASKA,2119,Aska,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PEDDAPALLE, Telangana",Telangana,PEDDAPALLE,2802,Peddapalli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARAMATI, Maharashtra",Maharashtra,BARAMATI,2735,Baramati,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SOUTH GOA, Goa",Goa,SOUTH GOA,3002,South Goa,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAMSHEDPUR, Jharkhand",Jharkhand,JAMSHEDPUR,2009,Jamshedpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DHANBAD, Jharkhand",Jharkhand,DHANBAD,2007,Dhanbad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAINPURI, Uttar Pradesh",Uttar Pradesh,MAINPURI,921,Mainpuri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"YAVATMAL-WASHIM, Maharashtra",Maharashtra,YAVATMAL-WASHIM,2714,Yavatmal-Washim,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ADILABAD(ST), Telangana",Telangana,ADILABAD(ST),2801,Adilabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HINGOLI, Maharashtra",Maharashtra,HINGOLI,2715,Hingoli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAVSARI, Gujarat",Gujarat,NAVSARI,2425,Navsari,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHALAKUDY, Kerala",Kerala,CHALAKUDY,3211,Chalakudy,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANNIYAKUMARI, Tamil Nadu",Tamil Nadu,KANNIYAKUMARI,3339,Kanyakumari,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHENNAI CENTRAL, Tamil Nadu",Tamil Nadu,CHENNAI CENTRAL,3304,Chennai Central,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RATNAGIRI-SINDHUDURG, Maharashtra",Maharashtra,RATNAGIRI-SINDHUDURG,2746,Ratnagiri-Sindhudurg,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARAMULLAH, Jammu And Kashmir",Jammu And Kashmir,BARAMULLAH,101,Baramulla,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AHMEDABAD EAST, Gujarat",Gujarat,AHMEDABAD EAST,2407,Ahmedabad East,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TRIPURA WEST, Tripura",Tripura,TRIPURA WEST,1601,Tripura West,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SATARA, Maharashtra",Maharashtra,SATARA,2745,Satara,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAGATSINGHPUR(SC), Odisha",Odisha,JAGATSINGHPUR(SC),2116,Jagatsinghpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARDHAMAN-DURGAPUR, West Bengal",West Bengal,BARDHAMAN-DURGAPUR,1939,Bardhaman-Durgapur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHENNAI NORTH, Tamil Nadu",Tamil Nadu,CHENNAI NORTH,3302,Chennai North,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SRINAGAR, Jammu And Kashmir",Jammu And Kashmir,SRINAGAR,102,Srinagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KANTHI, West Bengal",West Bengal,KANTHI,1931,Kanthi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOLHAPUR, Maharashtra",Maharashtra,KOLHAPUR,2747,Kolhapur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PUNE, Maharashtra",Maharashtra,PUNE,2734,Pune,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHADRAK(SC), Odisha",Odisha,BHADRAK(SC),2107,Bhadrak,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHIKKODI, Karnataka",Karnataka,CHIKKODI,2901,Chikodi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BISHNUPUR(SC), West Bengal",West Bengal,BISHNUPUR(SC),1937,Bishnupur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NALGONDA, Telangana",Telangana,NALGONDA,2813,Nalgonda,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AZAMGARH, Uttar Pradesh",Uttar Pradesh,AZAMGARH,969,Azamgarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"THENI, Tamil Nadu",Tamil Nadu,THENI,3333,Theni,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOTTAYAM, Kerala",Kerala,KOTTAYAM,3214,Kottayam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NASHIK, Maharashtra",Maharashtra,NASHIK,2721,Nashik,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KARAULI-DHOLPUR(SC), Rajasthan",Rajasthan,KARAULI-DHOLPUR(SC),810,Karauli-Dholpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BEGUSARAI, Bihar",Bihar,BEGUSARAI,1024,Begusarai,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANGAON(SC), West Bengal",West Bengal,BANGAON(SC),1914,Bangaon,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MANDYA, Karnataka",Karnataka,MANDYA,2920,Mandya,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MALDAHA DAKSHIN, West Bengal",West Bengal,MALDAHA DAKSHIN,1908,Maldaha Dakshin,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DAUSA(ST), Rajasthan",Rajasthan,DAUSA(ST),811,Dausa,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHHOTA UDAIPUR(ST), Gujarat",Gujarat,CHHOTA UDAIPUR(ST),2421,Chhota Udaipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAJPUR(SC), Odisha",Odisha,JAJPUR(SC),2108,Jajpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KATIHAR, Bihar",Bihar,KATIHAR,1011,Katihar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KODARMA, Jharkhand",Jharkhand,KODARMA,2005,Kodarma,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KHAMMAM, Telangana",Telangana,KHAMMAM,2817,Khammam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHAMARAJANAGAR(SC), Karnataka",Karnataka,CHAMARAJANAGAR(SC),2922,Chamarajanagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"COIMBATORE, Tamil Nadu",Tamil Nadu,COIMBATORE,3320,Coimbatore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PURI, Odisha",Odisha,PURI,2117,Puri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"WARDHA, Maharashtra",Maharashtra,WARDHA,2708,Wardha,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SAHARANPUR, Uttar Pradesh",Uttar Pradesh,SAHARANPUR,901,Saharanpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAMUI(SC), Bihar",Bihar,JAMUI(SC),1040,Jamui,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHIND(SC), Madhya Pradesh",Madhya Pradesh,BHIND(SC),2302,Bhind,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SOUTH DELHI, Delhi",Delhi,SOUTH DELHI,707,South Delhi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MALDAHA UTTAR, West Bengal",West Bengal,MALDAHA UTTAR,1907,Maldaha Uttar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOKRAJHAR (ST), Assam",Assam,KOKRAJHAR (ST),1805,Kokrajhar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KENDRAPARA, Odisha",Odisha,KENDRAPARA,2115,Kendrapara,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"UJJARPUR, Bihar",Bihar,UJJARPUR,1022,Ujiarpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HARDWAR, Uttarakhand",Uttarakhand,HARDWAR,505,Haridwar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BALASORE, Odisha",Odisha,BALASORE,2106,Balasore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NORTH GOA, Goa",Goa,NORTH GOA,3001,North Goa,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HASSAN, Karnataka",Karnataka,HASSAN,2916,Haasan,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KRISHNAGIRI, Tamil Nadu",Tamil Nadu,KRISHNAGIRI,3309,Krishnagiri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HAJIPUR(SC), Bihar",Bihar,HAJIPUR(SC),1021,Hajipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BANKURA, West Bengal",West Bengal,BANKURA,1936,Bankura,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ASANSOL, West Bengal",West Bengal,ASANSOL,1940,Asansol,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MUMBAI SOUTH, Maharashtra",Maharashtra,MUMBAI SOUTH,2731,Mumbai South,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARGARH, Odisha",Odisha,BARGARH,2101,Bargarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NALANDA, Bihar",Bihar,NALANDA,1029,Nalanda,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KAIRANA, Uttar Pradesh",Uttar Pradesh,KAIRANA,902,Kairana,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ALLAHABAD, Uttar Pradesh",Uttar Pradesh,ALLAHABAD,952,Allahabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BAGHPAT, Uttar Pradesh",Uttar Pradesh,BAGHPAT,911,Baghpat,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VELLORE, Tamil Nadu",Tamil Nadu,VELLORE,3308,Vellore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ERNAKULAM, Kerala",Kerala,ERNAKULAM,3212,Ernakulam,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HATKANANGLE, Maharashtra",Maharashtra,HATKANANGLE,2748,Hatkanangle,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GUNTUR, Andhra Pradesh",Andhra Pradesh,GUNTUR,2830,Guntur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAIPUR RURAL, Rajasthan",Rajasthan,JAIPUR RURAL,806,Jaipur Rural,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHIWANDI, Maharashtra",Maharashtra,BHIWANDI,2723,Bhiwandi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PALAKKAD, Kerala",Kerala,PALAKKAD,3208,Palakkad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PILIBHIT, Uttar Pradesh",Uttar Pradesh,PILIBHIT,926,Pilibhit,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ARUNACHAL WEST, Arunachal Pradesh",Arunachal Pradesh,ARUNACHAL WEST,1201,Arunachal West,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHENNAI SOUTH, Tamil Nadu",Tamil Nadu,CHENNAI SOUTH,3303,Chennai South,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHITRADURGA(SC), Karnataka",Karnataka,CHITRADURGA(SC),2918,Chitradurga,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"COOCHBEHAR(SC), West Bengal",West Bengal,COOCHBEHAR(SC),1901,Cooch Behar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ANAKAPALLE, Andhra Pradesh",Andhra Pradesh,ANAKAPALLE,2822,Anakapalli,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JAHANABAD, Bihar",Bihar,JAHANABAD,1036,Jahanabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BIDAR, Karnataka",Karnataka,BIDAR,2907,Bidar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BELLARY(ST), Karnataka",Karnataka,BELLARY(ST),2909,Bellary,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MAYURBHANJ (ST), Odisha",Odisha,MAYURBHANJ (ST),2105,Mayurbhanj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GWALIOR, Madhya Pradesh",Madhya Pradesh,GWALIOR,2303,Gwalior,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ZAHIRABAD, Telangana",Telangana,ZAHIRABAD,2805,Zahirabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"THRISSUR, Kerala",Kerala,THRISSUR,3210,Thrissur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"Darrang-Udalguri, Assam",Assam,Darrang-Udalguri,1808,Mangaldoi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DIBRUGARH, Assam",Assam,DIBRUGARH,1813,Dibrugarh,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AMBALA (SC), Haryana",Haryana,AMBALA (SC),601,Ambala,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JABALPUR, Madhya Pradesh",Madhya Pradesh,JABALPUR,2313,Jabalpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ARRAH, Bihar",Bihar,ARRAH,1032,Arrah,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"AHMEDABAD WEST(SC), Gujarat",Gujarat,AHMEDABAD WEST(SC),2408,Ahmedabad West,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"LAKSHADWEEP(ST), Lakshadweep",Lakshadweep,LAKSHADWEEP(ST),3101,Lakshadweep,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NANDED, Maharashtra",Maharashtra,NANDED,2716,Nanded,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JANGIPUR, West Bengal",West Bengal,JANGIPUR,1909,Jangipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"TRIPURA EAST(ST), Tripura",Tripura,TRIPURA EAST(ST),1602,Tripura East,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DINDORI(ST), Maharashtra",Maharashtra,DINDORI(ST),2720,Dindori,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"HYDERABAD, Telangana",Telangana,HYDERABAD,2809,Hyderabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FARIDABAD, Haryana",Haryana,FARIDABAD,610,Faridabad,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHATRA, Jharkhand",Jharkhand,CHATRA,2004,Chatra,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NORTH EAST DELHI, Delhi",Delhi,NORTH EAST DELHI,702,North East Delhi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GARHWAL, Uttarakhand",Uttarakhand,GARHWAL,502,Garhwal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GANGANAGAR(SC), Rajasthan",Rajasthan,GANGANAGAR(SC),801,Ganganagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BARRACKPUR, West Bengal",West Bengal,BARRACKPUR,1915,Barrackpore,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAMTEK(SC), Maharashtra",Maharashtra,RAMTEK(SC),2709,Ramtek,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NORTH WEST DELHI(SC), Delhi",Delhi,NORTH WEST DELHI(SC),705,North West Delhi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ANANTNAG, Jammu And Kashmir",Jammu And Kashmir,ANANTNAG,103,Anantnag,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VIJAYAWADA, Andhra Pradesh",Andhra Pradesh,VIJAYAWADA,2829,Vijayawada,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BAPATLA, Andhra Pradesh",Andhra Pradesh,BAPATLA,2832,Bapatla,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GANDHINAGAR, Gujarat",Gujarat,GANDHINAGAR,2406,Gandhinagar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"GADCHIROLI-CHIMUR(ST), Maharashtra",Maharashtra,GADCHIROLI-CHIMUR(ST),2712,Gadchiroli-Chimur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"FATEHPUR, Uttar Pradesh",Uttar Pradesh,FATEHPUR,949,Fatehpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BELGAUM, Karnataka",Karnataka,BELGAUM,2902,Belagavi,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MALAPPURAM, Kerala",Kerala,MALAPPURAM,3206,Malappuram,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"CHANDINI CHOWK, Delhi",Delhi,CHANDINI CHOWK,701,Chandni Chowk,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAJAHMUNDRY, Andhra Pradesh",Andhra Pradesh,RAJAHMUNDRY,2825,Rajahmundry,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NABARANGPUR(ST), Odisha",Odisha,NABARANGPUR(ST),2112,Nabarangpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BHANDARA-GONDIYA, Maharashtra",Maharashtra,BHANDARA-GONDIYA,2711,Bhandara-Gondiya,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KOZHIKODE, Kerala",Kerala,KOZHIKODE,3205,Kozhikode,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"MADHA, Maharashtra",Maharashtra,MADHA,2743,Madha,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NARASARAOPET, Andhra Pradesh",Andhra Pradesh,NARASARAOPET,2831,Narasaraopet,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"BOLANGIR, Odisha",Odisha,BOLANGIR,2110,Bolangir,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SOLAPUR(SC), Maharashtra",Maharashtra,SOLAPUR(SC),2742,Solapur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ONGOLE, Andhra Pradesh",Andhra Pradesh,ONGOLE,2833,Ongole,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SAMASTIPUR(SC), Bihar",Bihar,SAMASTIPUR(SC),1023,Samastipur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"VADAKARA, Kerala",Kerala,VADAKARA,3203,Vadakara,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"RAIGANJ, West Bengal",West Bengal,RAIGANJ,1905,Raiganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"SAMBALPUR, Odisha",Odisha,SAMBALPUR,2103,Sambalpur,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PALGHAR(ST), Maharashtra",Maharashtra,PALGHAR(ST),2722,Palghar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"DOMARIYAGANJ, Uttar Pradesh",Uttar Pradesh,DOMARIYAGANJ,960,Domariyaganj,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PONNANI, Kerala",Kerala,PONNANI,3207,Ponnani,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NAWADA, Bihar",Bihar,NAWADA,1039,Nawada,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"JALPAIGURI(SC), West Bengal",West Bengal,JALPAIGURI(SC),1903,Jalpaiguri,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"PURULIA, West Bengal",West Bengal,PURULIA,1935,Purulia,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"KARNAL, Haryana",Haryana,KARNAL,605,Karnal,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"NANDURBAR(ST), Maharashtra",Maharashtra,NANDURBAR(ST),2701,Nandurbar,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
+"ALIPURDUARS(ST), West Bengal",West Bengal,ALIPURDUARS(ST),1902,Alipurduars,MATCHED,CONSTITUENCY_CENTROID,DataMeet ECI Delimitation 2019,VALID,Normalized exact/alias key match
