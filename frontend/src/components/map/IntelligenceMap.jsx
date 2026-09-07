@@ -125,6 +125,17 @@ export default function IntelligenceMap({
     };
   }, []);
 
+  const safeMapAction = (fn) => {
+    if (!map.current) return;
+    if (map.current.isStyleLoaded && map.current.isStyleLoaded()) {
+      fn(map.current);
+    } else {
+      map.current.once('load', () => {
+        if (map.current) fn(map.current);
+      });
+    }
+  };
+
   // Fetch All Spatial Datasets
   useEffect(() => {
     if (!mapLoaded || !map.current) return;
@@ -168,391 +179,401 @@ export default function IntelligenceMap({
 
   // Update State Boundaries Layer
   const updateStateLayers = () => {
-    if (!map.current || !rawStateGeo.current) return;
-    const m = map.current;
+    if (!rawStateGeo.current) return;
+    safeMapAction((m) => {
+      const enrichedFeatures = rawStateGeo.current.features.map(f => {
+        const stName = f.properties.st_name;
+        const stMetrics = summaryData?.states?.[stName] || {};
+        const val = getMetricValue(stMetrics, currentMetric);
+        const color = calculateColor(val, currentMetric);
 
-    const enrichedFeatures = rawStateGeo.current.features.map(f => {
-      const stName = f.properties.st_name;
-      const stMetrics = summaryData?.states?.[stName] || {};
-      const val = getMetricValue(stMetrics, currentMetric);
-      const color = calculateColor(val, currentMetric);
+        return {
+          ...f,
+          properties: {
+            ...f.properties,
+            fillColor: color,
+            metricVal: val,
+            projectCount: stMetrics.project_count || 0,
+            disbursedCr: stMetrics.total_disbursed_cr || 0,
+            completionPct: stMetrics.completion_rate_pct || 0,
+            utilizationPct: stMetrics.utilization_rate_pct || 0,
+            highRiskCount: stMetrics.high_risk_count || 0,
+            avgRisk: stMetrics.avg_risk_score || 0
+          }
+        };
+      });
 
-      return {
-        ...f,
-        properties: {
-          ...f.properties,
-          fillColor: color,
-          metricVal: val,
-          projectCount: stMetrics.project_count || 0,
-          disbursedCr: stMetrics.total_disbursed_cr || 0,
-          completionPct: stMetrics.completion_rate_pct || 0,
-          utilizationPct: stMetrics.utilization_rate_pct || 0,
-          highRiskCount: stMetrics.high_risk_count || 0,
-          avgRisk: stMetrics.avg_risk_score || 0
-        }
-      };
+      const enrichedGeo = { type: 'FeatureCollection', features: enrichedFeatures };
+
+      if (m.getSource('states-source')) {
+        m.getSource('states-source').setData(enrichedGeo);
+      } else {
+        m.addSource('states-source', { type: 'geojson', data: enrichedGeo });
+
+        m.addLayer({
+          id: 'states-fill',
+          type: 'fill',
+          source: 'states-source',
+          paint: {
+            'fill-color': ['get', 'fillColor'],
+            'fill-opacity': 0.65,
+            'fill-outline-color': '#0f4c81'
+          }
+        });
+
+        m.addLayer({
+          id: 'states-line',
+          type: 'line',
+          source: 'states-source',
+          paint: {
+            'line-color': '#0f4c81',
+            'line-width': 1.6
+          }
+        });
+
+        m.on('mousemove', 'states-fill', (e) => {
+          if (selectedState) return;
+          m.getCanvas().style.cursor = 'pointer';
+          const p = e.features[0].properties;
+
+          const html = `
+            <div style="font-family: system-ui, -apple-system, sans-serif; padding: 6px 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
+                <strong style="font-size: 0.95rem; color: #0f172a;">${p.st_name}</strong>
+                <span style="font-size: 0.7rem; background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-weight: 600;">State</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 0.78rem; color: #334155;">
+                <div>Projects: <strong style="color: #0f4c81;">${Number(p.projectCount).toLocaleString()}</strong></div>
+                <div>Released: <strong style="color: #059669;">₹${p.disbursedCr} Cr</strong></div>
+                <div>Completion: <strong style="color: #7c3aed;">${p.completionPct}%</strong></div>
+                <div>Utilization: <strong style="color: #0284c7;">${p.utilizationPct}%</strong></div>
+              </div>
+              <div style="margin-top: 6px; font-size: 0.7rem; color: #0284c7; font-weight: 600;">
+                Click to inspect State Constituencies & Works →
+              </div>
+            </div>
+          `;
+          popup.current.setLngLat(e.lngLat).setHTML(html).addTo(m);
+        });
+
+        m.on('mouseleave', 'states-fill', () => {
+          m.getCanvas().style.cursor = '';
+          popup.current.remove();
+        });
+
+        m.on('click', 'states-fill', (e) => {
+          const p = e.features[0].properties;
+          const bbox = typeof p.bbox === 'string' ? JSON.parse(p.bbox) : p.bbox;
+          if (onSelectState) onSelectState(p.st_name, bbox);
+        });
+      }
     });
-
-    const enrichedGeo = { type: 'FeatureCollection', features: enrichedFeatures };
-
-    if (m.getSource('states-source')) {
-      m.getSource('states-source').setData(enrichedGeo);
-    } else {
-      m.addSource('states-source', { type: 'geojson', data: enrichedGeo });
-
-      m.addLayer({
-        id: 'states-fill',
-        type: 'fill',
-        source: 'states-source',
-        paint: {
-          'fill-color': ['get', 'fillColor'],
-          'fill-opacity': 0.65,
-          'fill-outline-color': '#0f4c81'
-        }
-      });
-
-      m.addLayer({
-        id: 'states-line',
-        type: 'line',
-        source: 'states-source',
-        paint: {
-          'line-color': '#0f4c81',
-          'line-width': 1.6
-        }
-      });
-
-      m.on('mousemove', 'states-fill', (e) => {
-        if (selectedState) return;
-        m.getCanvas().style.cursor = 'pointer';
-        const p = e.features[0].properties;
-
-        const html = `
-          <div style="font-family: system-ui, -apple-system, sans-serif; padding: 6px 8px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              <strong style="font-size: 0.95rem; color: #0f172a;">${p.st_name}</strong>
-              <span style="font-size: 0.7rem; background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-weight: 600;">State</span>
-            </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 0.78rem; color: #334155;">
-              <div>Projects: <strong style="color: #0f4c81;">${Number(p.projectCount).toLocaleString()}</strong></div>
-              <div>Released: <strong style="color: #059669;">₹${p.disbursedCr} Cr</strong></div>
-              <div>Completion: <strong style="color: #7c3aed;">${p.completionPct}%</strong></div>
-              <div>Utilization: <strong style="color: #0284c7;">${p.utilizationPct}%</strong></div>
-            </div>
-            <div style="margin-top: 6px; font-size: 0.7rem; color: #0284c7; font-weight: 600;">
-              Click to inspect State Constituencies & Works →
-            </div>
-          </div>
-        `;
-        popup.current.setLngLat(e.lngLat).setHTML(html).addTo(m);
-      });
-
-      m.on('mouseleave', 'states-fill', () => {
-        m.getCanvas().style.cursor = '';
-        popup.current.remove();
-      });
-
-      m.on('click', 'states-fill', (e) => {
-        const p = e.features[0].properties;
-        const bbox = typeof p.bbox === 'string' ? JSON.parse(p.bbox) : p.bbox;
-        if (onSelectState) onSelectState(p.st_name, bbox);
-      });
-    }
   };
 
   // Update PC Boundaries Layer
   const updatePCLayers = () => {
-    if (!map.current || !rawPCGeo.current) return;
-    const m = map.current;
+    if (!rawPCGeo.current) return;
+    safeMapAction((m) => {
+      const enrichedFeatures = rawPCGeo.current.features.map(f => {
+        const pcId = f.properties.pc_id;
+        const pcMetrics = summaryData?.constituencies?.[String(pcId)] || {};
+        const val = getMetricValue(pcMetrics, currentMetric);
+        const color = calculateColor(val, currentMetric);
 
-    const enrichedFeatures = rawPCGeo.current.features.map(f => {
-      const pcId = f.properties.pc_id;
-      const pcMetrics = summaryData?.constituencies?.[String(pcId)] || {};
-      const val = getMetricValue(pcMetrics, currentMetric);
-      const color = calculateColor(val, currentMetric);
+        return {
+          ...f,
+          properties: {
+            ...f.properties,
+            fillColor: color,
+            metricVal: val,
+            projectCount: pcMetrics.project_count || 0,
+            disbursedCr: pcMetrics.total_disbursed_cr || 0,
+            completionPct: pcMetrics.completion_rate_pct || 0,
+            highRiskCount: pcMetrics.high_risk_count || 0,
+            avgRisk: pcMetrics.avg_risk_score || 0
+          }
+        };
+      });
 
-      return {
-        ...f,
-        properties: {
-          ...f.properties,
-          fillColor: color,
-          metricVal: val,
-          projectCount: pcMetrics.project_count || 0,
-          disbursedCr: pcMetrics.total_disbursed_cr || 0,
-          completionPct: pcMetrics.completion_rate_pct || 0,
-          highRiskCount: pcMetrics.high_risk_count || 0,
-          avgRisk: pcMetrics.avg_risk_score || 0
-        }
-      };
+      const enrichedGeo = { type: 'FeatureCollection', features: enrichedFeatures };
+
+      if (m.getSource('constituencies-source')) {
+        m.getSource('constituencies-source').setData(enrichedGeo);
+      } else {
+        m.addSource('constituencies-source', { type: 'geojson', data: enrichedGeo });
+
+        m.addLayer({
+          id: 'constituencies-fill',
+          type: 'fill',
+          source: 'constituencies-source',
+          paint: {
+            'fill-color': ['get', 'fillColor'],
+            'fill-opacity': 0.75,
+            'fill-outline-color': '#475569'
+          },
+          filter: ['==', 'norm_state', '']
+        });
+
+        m.addLayer({
+          id: 'constituencies-line',
+          type: 'line',
+          source: 'constituencies-source',
+          paint: {
+            'line-color': '#1e293b',
+            'line-width': 1.2
+          },
+          filter: ['==', 'norm_state', '']
+        });
+
+        m.on('click', 'constituencies-fill', (e) => {
+          const p = e.features[0].properties;
+          if (onSelectConstituency) onSelectConstituency(p);
+        });
+      }
     });
-
-    const enrichedGeo = { type: 'FeatureCollection', features: enrichedFeatures };
-
-    if (m.getSource('constituencies-source')) {
-      m.getSource('constituencies-source').setData(enrichedGeo);
-    } else {
-      m.addSource('constituencies-source', { type: 'geojson', data: enrichedGeo });
-
-      m.addLayer({
-        id: 'constituencies-fill',
-        type: 'fill',
-        source: 'constituencies-source',
-        paint: {
-          'fill-color': ['get', 'fillColor'],
-          'fill-opacity': 0.75,
-          'fill-outline-color': '#475569'
-        },
-        filter: ['==', 'norm_state', '']
-      });
-
-      m.addLayer({
-        id: 'constituencies-line',
-        type: 'line',
-        source: 'constituencies-source',
-        paint: {
-          'line-color': '#1e293b',
-          'line-width': 1.2
-        },
-        filter: ['==', 'norm_state', '']
-      });
-
-      m.on('click', 'constituencies-fill', (e) => {
-        const p = e.features[0].properties;
-        if (onSelectConstituency) onSelectConstituency(p);
-      });
-    }
   };
 
   // Update Centroid Point & Bubble Layers
   const updateCentroidLayers = () => {
-    if (!map.current || !rawCentroidsGeo.current) return;
-    const m = map.current;
+    if (!rawCentroidsGeo.current) return;
+    safeMapAction((m) => {
+      const enrichedFeatures = rawCentroidsGeo.current.features.map(f => {
+        const pcId = f.properties.pc_id;
+        const pcMetrics = summaryData?.constituencies?.[String(pcId)] || {};
+        const val = getMetricValue(pcMetrics, currentMetric);
+        const color = calculateColor(val, currentMetric);
 
-    const enrichedFeatures = rawCentroidsGeo.current.features.map(f => {
-      const pcId = f.properties.pc_id;
-      const pcMetrics = summaryData?.constituencies?.[String(pcId)] || {};
-      const val = getMetricValue(pcMetrics, currentMetric);
-      const color = calculateColor(val, currentMetric);
-
-      return {
-        ...f,
-        properties: {
-          ...f.properties,
-          fillColor: color,
-          projectCount: pcMetrics.project_count || f.properties.project_count || 0,
-          disbursedCr: pcMetrics.total_disbursed_cr || f.properties.total_disbursed_cr || 0,
-          highRiskCount: pcMetrics.high_risk_count || f.properties.high_risk_count || 0,
-          avgRisk: pcMetrics.avg_risk_score || f.properties.avg_risk_score || 0,
-          complaintsCount: pcMetrics.complaints_count || f.properties.complaints_count || 0
-        }
-      };
-    });
-
-    const enrichedGeo = { type: 'FeatureCollection', features: enrichedFeatures };
-
-    if (m.getSource('centroids-source')) {
-      m.getSource('centroids-source').setData(enrichedGeo);
-    } else {
-      m.addSource('centroids-source', { type: 'geojson', data: enrichedGeo });
-
-      // 1. Heatmap Layer on Centroids (Complaints & High Risk Density)
-      m.addLayer({
-        id: 'centroids-heatmap',
-        type: 'heatmap',
-        source: 'centroids-source',
-        maxzoom: 12,
-        paint: {
-          'heatmap-weight': [
-            'interpolate', ['linear'], ['get', 'highRiskCount'],
-            0, 0.2,
-            5, 0.6,
-            20, 1.2
-          ],
-          'heatmap-intensity': [
-            'interpolate', ['linear'], ['zoom'],
-            3, 0.8,
-            8, 1.6
-          ],
-          'heatmap-color': [
-            'interpolate', ['linear'], ['heatmap-density'],
-            0, 'rgba(33, 102, 172, 0)',
-            0.2, 'rgba(103, 169, 207, 0.5)',
-            0.4, 'rgba(209, 229, 240, 0.7)',
-            0.6, 'rgba(253, 219, 199, 0.85)',
-            0.8, 'rgba(239, 138, 98, 0.9)',
-            1, 'rgba(220, 38, 38, 0.95)'
-          ],
-          'heatmap-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            3, 15,
-            6, 28,
-            9, 45
-          ],
-          'heatmap-opacity': 0.75
-        }
+        return {
+          ...f,
+          properties: {
+            ...f.properties,
+            fillColor: color,
+            projectCount: pcMetrics.project_count || f.properties.project_count || 0,
+            disbursedCr: pcMetrics.total_disbursed_cr || f.properties.total_disbursed_cr || 0,
+            highRiskCount: pcMetrics.high_risk_count || f.properties.high_risk_count || 0,
+            avgRisk: pcMetrics.avg_risk_score || f.properties.avg_risk_score || 0,
+            complaintsCount: pcMetrics.complaints_count || f.properties.complaints_count || 0
+          }
+        };
       });
 
-      // 2. Constituency Bubble Layer (Clustered Circles)
-      m.addLayer({
-        id: 'centroid-bubbles',
-        type: 'circle',
-        source: 'centroids-source',
-        minzoom: 3.5,
-        paint: {
-          'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            4, [
-              'interpolate', ['linear'], ['get', 'projectCount'],
-              0, 3.5,
-              50, 6,
-              200, 10,
-              500, 15
+      const enrichedGeo = { type: 'FeatureCollection', features: enrichedFeatures };
+
+      if (m.getSource('centroids-source')) {
+        m.getSource('centroids-source').setData(enrichedGeo);
+      } else {
+        m.addSource('centroids-source', { type: 'geojson', data: enrichedGeo });
+
+        // 1. Heatmap Layer on Centroids (Complaints & High Risk Density)
+        m.addLayer({
+          id: 'centroids-heatmap',
+          type: 'heatmap',
+          source: 'centroids-source',
+          maxzoom: 12,
+          paint: {
+            'heatmap-weight': [
+              'interpolate', ['linear'], ['get', 'highRiskCount'],
+              0, 0.2,
+              5, 0.6,
+              20, 1.2
             ],
-            8, [
-              'interpolate', ['linear'], ['get', 'projectCount'],
-              0, 6,
-              50, 10,
-              200, 16,
-              500, 24
-            ]
-          ],
-          'circle-color': [
-            'case',
-            ['>', ['get', 'highRiskCount'], 0], '#ef4444',
-            ['get', 'fillColor']
-          ],
-          'circle-stroke-width': 1.8,
-          'circle-stroke-color': '#ffffff',
-          'circle-opacity': 0.9
-        }
-      });
+            'heatmap-intensity': [
+              'interpolate', ['linear'], ['zoom'],
+              3, 0.8,
+              8, 1.6
+            ],
+            'heatmap-color': [
+              'interpolate', ['linear'], ['heatmap-density'],
+              0, 'rgba(33, 102, 172, 0)',
+              0.2, 'rgba(103, 169, 207, 0.5)',
+              0.4, 'rgba(209, 229, 240, 0.7)',
+              0.6, 'rgba(253, 219, 199, 0.85)',
+              0.8, 'rgba(239, 138, 98, 0.9)',
+              1, 'rgba(220, 38, 38, 0.95)'
+            ],
+            'heatmap-radius': [
+              'interpolate', ['linear'], ['zoom'],
+              3, 15,
+              6, 28,
+              9, 45
+            ],
+            'heatmap-opacity': 0.75
+          }
+        });
 
-      // Hover on Centroid Bubbles
-      m.on('mousemove', 'centroid-bubbles', (e) => {
-        m.getCanvas().style.cursor = 'pointer';
-        const p = e.features[0].properties;
+        // 2. Constituency Bubble Layer (Clustered Circles)
+        m.addLayer({
+          id: 'centroid-bubbles',
+          type: 'circle',
+          source: 'centroids-source',
+          minzoom: 3.5,
+          paint: {
+            'circle-radius': [
+              'interpolate', ['linear'], ['zoom'],
+              4, [
+                'interpolate', ['linear'], ['get', 'projectCount'],
+                0, 3.5,
+                50, 6,
+                200, 10,
+                500, 15
+              ],
+              8, [
+                'interpolate', ['linear'], ['get', 'projectCount'],
+                0, 6,
+                50, 10,
+                200, 16,
+                500, 24
+              ]
+            ],
+            'circle-color': [
+              'case',
+              ['>', ['get', 'highRiskCount'], 0], '#ef4444',
+              ['get', 'fillColor']
+            ],
+            'circle-stroke-width': 1.8,
+            'circle-stroke-color': '#ffffff',
+            'circle-opacity': 0.9
+          }
+        });
 
-        const html = `
-          <div style="font-family: system-ui, -apple-system, sans-serif; padding: 6px 8px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              <strong style="font-size: 0.92rem; color: #0f172a;">${p.pc_name}</strong>
-              <span style="font-size: 0.68rem; background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px;">${p.st_name}</span>
-            </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 0.78rem; color: #334155;">
-              <div>Projects: <strong style="color: #0f4c81;">${Number(p.projectCount).toLocaleString()}</strong></div>
-              <div>Released: <strong style="color: #059669;">₹${p.total_disbursed_cr || 0} Cr</strong></div>
-            </div>
-            <div style="margin-top: 6px; padding-top: 4px; border-top: 1px solid #f1f5f9; font-size: 0.74rem;">
-              <span style="color: #64748b;">Risk Engine:</span>
-              <strong style="color: ${p.highRiskCount > 0 ? '#dc2626' : '#16a34a'};">
-                ${p.highRiskCount > 0 ? `⚠️ ${p.highRiskCount} High Risk Works` : 'Low Risk Profile'}
-              </strong>
-            </div>
-            <div style="margin-top: 6px; font-size: 0.68rem; color: #0284c7; font-weight: 600;">
-              Click to view project details in drawer →
-            </div>
-          </div>
-        `;
-        popup.current.setLngLat(e.lngLat).setHTML(html).addTo(m);
-      });
+        // Hover on Centroid Bubbles
+        m.on('mousemove', 'centroid-bubbles', (e) => {
+          m.getCanvas().style.cursor = 'pointer';
+          const p = e.features[0].properties;
 
-      m.on('mouseleave', 'centroid-bubbles', () => {
-        m.getCanvas().style.cursor = '';
-        popup.current.remove();
-      });
+          const html = `
+            <div style="font-family: system-ui, -apple-system, sans-serif; padding: 6px 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
+                <strong style="font-size: 0.92rem; color: #0f172a;">${p.pc_name}</strong>
+                <span style="font-size: 0.68rem; background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px;">${p.st_name}</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 0.78rem; color: #334155;">
+                <div>Projects: <strong style="color: #0f4c81;">${Number(p.projectCount).toLocaleString()}</strong></div>
+                <div>Released: <strong style="color: #059669;">₹${p.total_disbursed_cr || 0} Cr</strong></div>
+              </div>
+              <div style="margin-top: 6px; padding-top: 4px; border-top: 1px solid #f1f5f9; font-size: 0.74rem;">
+                <span style="color: #64748b;">Risk Engine:</span>
+                <strong style="color: ${p.highRiskCount > 0 ? '#dc2626' : '#16a34a'};">
+                  ${p.highRiskCount > 0 ? `⚠️ ${p.highRiskCount} High Risk Works` : 'Low Risk Profile'}
+                </strong>
+              </div>
+              <div style="margin-top: 6px; font-size: 0.68rem; color: #0284c7; font-weight: 600;">
+                Click to view project details in drawer →
+              </div>
+            </div>
+          `;
+          popup.current.setLngLat(e.lngLat).setHTML(html).addTo(m);
+        });
 
-      m.on('click', 'centroid-bubbles', (e) => {
-        const p = e.features[0].properties;
-        if (onSelectConstituency) onSelectConstituency(p);
-      });
-    }
+        m.on('mouseleave', 'centroid-bubbles', () => {
+          m.getCanvas().style.cursor = '';
+          popup.current.remove();
+        });
+
+        m.on('click', 'centroid-bubbles', (e) => {
+          const p = e.features[0].properties;
+          if (onSelectConstituency) onSelectConstituency(p);
+        });
+      }
+    });
   };
 
   // Update Individual Project Location Points (Dots)
   const updateProjectPointLayers = () => {
-    if (!map.current || !rawProjectPointsGeo.current) return;
-    const m = map.current;
+    if (!rawProjectPointsGeo.current) return;
+    safeMapAction((m) => {
+      if (m.getSource('project-points-source')) {
+        m.getSource('project-points-source').setData(rawProjectPointsGeo.current);
+      } else {
+        m.addSource('project-points-source', {
+          type: 'geojson',
+          data: rawProjectPointsGeo.current
+        });
 
-    if (m.getSource('project-points-source')) {
-      m.getSource('project-points-source').setData(rawProjectPointsGeo.current);
-    } else {
-      m.addSource('project-points-source', {
-        type: 'geojson',
-        data: rawProjectPointsGeo.current
-      });
+        // Project Location Dots Layer (Visible at all zoom levels)
+        m.addLayer({
+          id: 'project-dots',
+          type: 'circle',
+          source: 'project-points-source',
+          paint: {
+            'circle-radius': [
+              'interpolate', ['linear'], ['zoom'],
+              3, 3.5,
+              6, 5.5,
+              9, 8.5,
+              13, 12
+            ],
+            'circle-color': [
+              'match', ['get', 'risk_band'],
+              'High', '#ef4444',
+              'Medium', '#f59e0b',
+              'Low', '#10b981',
+              '#0284c7'
+            ],
+            'circle-stroke-width': [
+              'interpolate', ['linear'], ['zoom'],
+              3, 0.8,
+              7, 1.4,
+              12, 2.0
+            ],
+            'circle-stroke-color': '#ffffff',
+            'circle-opacity': 0.95
+          }
+        });
 
-      // Project Location Dots Layer
-      m.addLayer({
-        id: 'project-dots',
-        type: 'circle',
-        source: 'project-points-source',
-        minzoom: 4.5,
-        paint: {
-          'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            4.5, 2.5,
-            7, 4.2,
-            11, 7.5,
-            14, 11
-          ],
-          'circle-color': [
-            'match', ['get', 'risk_band'],
-            'High', '#ef4444',
-            'Medium', '#f59e0b',
-            'Low', '#10b981',
-            '#0284c7'
-          ],
-          'circle-stroke-width': [
-            'interpolate', ['linear'], ['zoom'],
-            5, 0.8,
-            10, 1.5
-          ],
-          'circle-stroke-color': '#ffffff',
-          'circle-opacity': 0.92
-        }
-      });
+        // Hover on Individual Project Dots
+        m.on('mousemove', 'project-dots', (e) => {
+          m.getCanvas().style.cursor = 'pointer';
+          const p = e.features[0].properties;
 
-      // Hover on Individual Project Dots
-      m.on('mousemove', 'project-dots', (e) => {
-        m.getCanvas().style.cursor = 'pointer';
-        const p = e.features[0].properties;
+          const isHigh = p.risk_band === 'High';
+          const isMed = p.risk_band === 'Medium';
+          const badgeBg = isHigh ? '#fee2e2' : isMed ? '#fef3c7' : '#dcfce7';
+          const badgeColor = isHigh ? '#b91c1c' : isMed ? '#b45309' : '#15803d';
 
-        const html = `
-          <div style="font-family: system-ui, -apple-system, sans-serif; padding: 6px 8px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #cbd5e1; padding-bottom: 4px; margin-bottom: 6px;">
-              <strong style="font-size: 0.78rem; color: #0f172a; font-family: monospace;">${p.work_code}</strong>
-              <span style="font-size: 0.68rem; font-weight: 700; background: ${p.risk_band === 'High' ? '#fee2e2' : p.risk_band === 'Medium' ? '#fef3c7' : '#dcfce7'}; color: ${p.risk_band === 'High' ? '#b91c1c' : p.risk_band === 'Medium' ? '#b45309' : '#15803d'}; padding: 2px 6px; border-radius: 4px;">
-                ${p.risk_band} (${p.risk_score})
-              </span>
+          const html = `
+            <div style="font-family: system-ui, -apple-system, sans-serif; padding: 6px 8px; min-width: 200px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 4px; margin-bottom: 6px;">
+                <strong style="font-size: 0.76rem; color: #0f172a; font-family: monospace;">${p.work_code}</strong>
+                <span style="font-size: 0.68rem; font-weight: 700; background: ${badgeBg}; color: ${badgeColor}; padding: 2px 6px; border-radius: 4px;">
+                  ${p.risk_band} (${p.risk_score})
+                </span>
+              </div>
+              <div style="font-size: 0.8rem; color: #0f172a; font-weight: 600; margin-bottom: 4px; line-height: 1.3;">
+                ${p.activity_name || p.category}
+              </div>
+              ${p.work_description && p.work_description !== p.activity_name ? `
+                <div style="font-size: 0.72rem; color: #64748b; margin-bottom: 6px; line-height: 1.25;">
+                  ${p.work_description}
+                </div>
+              ` : ''}
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 0.75rem; color: #334155; background: #f8fafc; padding: 4px 6px; border-radius: 4px;">
+                <div>PC: <strong>${p.pc_name}</strong></div>
+                <div>State: <strong>${p.state}</strong></div>
+                <div>Disbursed: <strong style="color: #059669;">₹${p.amount_lakh || 0} L</strong></div>
+                <div>Status: <strong>${p.investigation_status || 'Active'}</strong></div>
+              </div>
+              <div style="margin-top: 6px; font-size: 0.68rem; color: #0284c7; font-weight: 600; text-align: right;">
+                Click dot to investigate project →
+              </div>
             </div>
-            <div style="font-size: 0.75rem; color: #1e293b; font-weight: 600; margin-bottom: 4px;">
-              ${p.activity_name || p.category}
-            </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 0.74rem; color: #475569;">
-              <div>PC: <strong>${p.pc_name}</strong></div>
-              <div>State: <strong>${p.state}</strong></div>
-              <div>Sanctioned: <strong>₹${p.amount_lakh || 0} Lakh</strong></div>
-              <div>Status: <strong>${p.investigation_status || 'Active'}</strong></div>
-            </div>
-            <div style="margin-top: 6px; font-size: 0.68rem; color: #0284c7; font-weight: 600;">
-              Click point to investigate work in drawer →
-            </div>
-          </div>
-        `;
-        popup.current.setLngLat(e.lngLat).setHTML(html).addTo(m);
-      });
+          `;
+          popup.current.setLngLat(e.lngLat).setHTML(html).addTo(m);
+        });
 
-      m.on('mouseleave', 'project-dots', () => {
-        m.getCanvas().style.cursor = '';
-        popup.current.remove();
-      });
+        m.on('mouseleave', 'project-dots', () => {
+          m.getCanvas().style.cursor = '';
+          popup.current.remove();
+        });
 
-      m.on('click', 'project-dots', (e) => {
-        const p = e.features[0].properties;
-        if (onSelectConstituency) {
-          onSelectConstituency({ pc_id: p.pc_id, pc_name: p.pc_name, st_name: p.state });
-        }
-      });
-    }
+        m.on('click', 'project-dots', (e) => {
+          const p = e.features[0].properties;
+          if (onSelectConstituency) {
+            onSelectConstituency({ pc_id: p.pc_id, pc_name: p.pc_name, st_name: p.state });
+          }
+        });
+      }
+    });
   };
 
   // Synchronize dynamic metric updates

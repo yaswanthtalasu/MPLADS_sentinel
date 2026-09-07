@@ -359,7 +359,7 @@ def get_project_points_geojson(
     category: Optional[str] = None,
     status: Optional[str] = None,
     risk_band: Optional[str] = None,
-    limit: int = Query(15000, le=50000)
+    limit: int = Query(25000, le=50000)
 ):
     """
     Returns GeoJSON FeatureCollection of individual project location points with risk details.
@@ -375,6 +375,7 @@ def get_project_points_geojson(
                 p.work_code,
                 p.work_category,
                 p.activity_name,
+                p.work_description,
                 p.amount_disbursed,
                 p.risk_score,
                 p.risk_band,
@@ -396,18 +397,19 @@ def get_project_points_geojson(
         for r in rows:
             wcode = r[0]
             cat = r[1]
-            act = r[2]
-            amt = r[3] or 0
-            risk_score = round(r[4] or 0, 1)
-            risk_band_val = r[5] or "Low"
-            st = r[6]
-            pcid = r[7]
-            pcname = r[8]
-            base_lat = r[9]
-            base_lon = r[10]
-            inv_stat = r[11] or "Unassigned"
+            act = r[2] or "MPLADS Project"
+            desc = r[3] or act
+            amt = r[4] or 0
+            risk_score = round(r[5] or 0, 1)
+            risk_band_val = r[6] or "Low"
+            st = r[7]
+            pcid = r[8]
+            pcname = r[9]
+            base_lat = r[10]
+            base_lon = r[11]
+            inv_stat = r[12] or "Unassigned"
 
-            # Deterministic radial offset (up to ~6 km radius) around constituency centroid
+            # Deterministic radial offset (~5 km spread) around constituency centroid
             h = int(hashlib.md5(wcode.encode('utf-8')).hexdigest()[:8], 16)
             angle = (h % 360) * (math.pi / 180.0)
             radius = math.sqrt(((h >> 8) % 1000) / 1000.0) * 0.065
@@ -423,7 +425,8 @@ def get_project_points_geojson(
                 "properties": {
                     "work_code": wcode,
                     "category": cat,
-                    "activity_name": act or "MPLADS Project",
+                    "activity_name": act,
+                    "work_description": desc[:120] + ("..." if len(desc) > 120 else ""),
                     "amount_disbursed": amt,
                     "amount_lakh": round(amt / 1e5, 2),
                     "risk_score": risk_score,
