@@ -325,18 +325,46 @@ export default function IntelligenceMap({
         filter: ['==', 'norm_state', '']
       });
 
-      // Centroid Circle Markers
+      // Project Location Dots / Centroid Circle Markers
       m.addLayer({
         id: 'centroids-circle',
         type: 'circle',
         source: 'constituencies-source',
         paint: {
-          'circle-radius': 5,
-          'circle-color': '#0f4c81',
+          'circle-radius': [
+            'interpolate', ['linear'], ['get', 'projectCount'],
+            0, 4,
+            50, 6,
+            150, 10,
+            300, 14
+          ],
+          'circle-color': [
+            'case',
+            ['>', ['get', 'highRiskCount'], 0], '#ef4444',
+            ['get', 'fillColor']
+          ],
           'circle-stroke-width': 2,
-          'circle-stroke-color': '#ffffff'
-        },
-        filter: ['==', 'norm_state', '']
+          'circle-stroke-color': '#ffffff',
+          'circle-opacity': 0.92
+        }
+      });
+
+      // Dot Click Handler
+      m.on('click', 'centroids-circle', (e) => {
+        if (e.features && e.features.length > 0) {
+          const p = e.features[0].properties;
+          if (onSelectConstituency) {
+            onSelectConstituency(p);
+          }
+        }
+      });
+
+      m.on('mouseenter', 'centroids-circle', () => {
+        m.getCanvas().style.cursor = 'pointer';
+      });
+
+      m.on('mouseleave', 'centroids-circle', () => {
+        m.getCanvas().style.cursor = '';
       });
 
       // Hover handler
