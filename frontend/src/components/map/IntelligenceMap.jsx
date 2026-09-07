@@ -127,12 +127,15 @@ export default function IntelligenceMap({
 
   const safeMapAction = (fn) => {
     if (!map.current) return;
-    if (map.current.isStyleLoaded && map.current.isStyleLoaded()) {
+    try {
       fn(map.current);
-    } else {
-      map.current.once('load', () => {
-        if (map.current) fn(map.current);
-      });
+    } catch (err) {
+      console.warn('Map action deferred, waiting for styledata:', err);
+      if (map.current) {
+        map.current.once('styledata', () => {
+          try { if (map.current) fn(map.current); } catch (e) { console.error('Deferred map action error:', e); }
+        });
+      }
     }
   };
 
