@@ -139,52 +139,60 @@ export default function IntelligenceMap({
     }
   };
 
-  // Fetch All Spatial Datasets with infallible offline/online fallback
+  // Fetch All Spatial Datasets with Instant Local-First Caching
   useEffect(() => {
     if (!mapLoaded || !map.current) return;
 
-    const fetchGeo = async (endpoint, fallbackPath) => {
+    const loadDataset = async (endpoint, localPath, onData) => {
+      // 1. Immediately load bundled local dataset
       try {
-        const res = await fetch(`${API_BASE}${endpoint}`);
-        if (res.ok) return await res.json();
+        const localRes = await fetch(localPath);
+        if (localRes.ok) {
+          const localData = await localRes.json();
+          onData(localData);
+        }
       } catch (e) {
-        // Fallback to static bundled geo data if backend is asleep or unreachable
+        console.warn('Local geo fetch error for', localPath, e);
       }
-      const fallbackRes = await fetch(fallbackPath);
-      return await fallbackRes.json();
+
+      // 2. Optionally refresh from live API if reachable within 2.5s
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 2500);
+        const liveRes = await fetch(`${API_BASE}${endpoint}`, { signal: controller.signal });
+        clearTimeout(timeoutId);
+        if (liveRes.ok) {
+          const liveData = await liveRes.json();
+          onData(liveData);
+        }
+      } catch (e) {
+        // Live API unreachable or timed out; local data remains active
+      }
     };
 
-    // 1. Fetch State Boundaries
-    fetchGeo('/api/map/boundaries/states', '/geo_data/india_states.json')
-      .then(data => {
-        rawStateGeo.current = data;
-        updateStateLayers();
-      })
-      .catch(err => console.error('Failed to load state boundaries:', err));
+    // 1. State Boundaries
+    loadDataset('/api/map/boundaries/states', '/geo_data/india_states.json', (data) => {
+      rawStateGeo.current = data;
+      updateStateLayers();
+    });
 
-    // 2. Fetch PC Boundaries
-    fetchGeo('/api/map/boundaries/constituencies', '/geo_data/india_constituencies.json')
-      .then(data => {
-        rawPCGeo.current = data;
-        updatePCLayers();
-      })
-      .catch(err => console.error('Failed to load PC boundaries:', err));
+    // 2. PC Boundaries
+    loadDataset('/api/map/boundaries/constituencies', '/geo_data/india_constituencies.json', (data) => {
+      rawPCGeo.current = data;
+      updatePCLayers();
+    });
 
-    // 3. Fetch Constituency Centroid Points
-    fetchGeo('/api/map/centroids', '/geo_data/india_centroids.json')
-      .then(data => {
-        rawCentroidsGeo.current = data;
-        updateCentroidLayers();
-      })
-      .catch(err => console.error('Failed to load centroids:', err));
+    // 3. Centroid Points
+    loadDataset('/api/map/centroids', '/geo_data/india_centroids.json', (data) => {
+      rawCentroidsGeo.current = data;
+      updateCentroidLayers();
+    });
 
-    // 4. Fetch Project Location Points (All Project Dots)
-    fetchGeo('/api/map/project-points?limit=25000', '/geo_data/india_project_points.json')
-      .then(data => {
-        rawProjectPointsGeo.current = data;
-        updateProjectPointLayers();
-      })
-      .catch(err => console.error('Failed to load project points:', err));
+    // 4. Project Location Points (All Project Dots)
+    loadDataset('/api/map/project-points?limit=25000', '/geo_data/india_project_points.json', (data) => {
+      rawProjectPointsGeo.current = data;
+      updateProjectPointLayers();
+    });
   }, [mapLoaded]);
 
   // Update State Boundaries Layer
@@ -500,7 +508,31 @@ export default function IntelligenceMap({
           data: rawProjectPointsGeo.current
         });
 
-        // Project Location Dots Layer (Visible at all zoom levels)
+        // 1. Subtle Glow Layer under Project Dots
+        m.addLayer({
+          id: 'project-dots-glow',
+          type: 'circle',
+          source: 'project-points-source',
+          paint: {
+            'circle-radius': [
+              'interpolate', ['linear'], ['zoom'],
+              3, 5,
+              6, 7.5,
+              9, 11,
+              13, 15
+            ],
+            'circle-color': [
+              'match', ['get', 'risk_band'],
+              'High', 'rgba(239, 68, 68, 0.4)',
+              'Medium', 'rgba(245, 158, 11, 0.4)',
+              'Low', 'rgba(16, 185, 129, 0.4)',
+              'rgba(2, 132, 199, 0.4)'
+            ],
+            'circle-opacity': 0.85
+          }
+        });
+
+        // 2. Crisp Project Location Dots Layer (Visible at all zoom levels)
         m.addLayer({
           id: 'project-dots',
           type: 'circle',
@@ -520,19 +552,15 @@ export default function IntelligenceMap({
               'Low', '#10b981',
               '#0284c7'
             ],
-            'circle-stroke-width': [
-              'interpolate', ['linear'], ['zoom'],
-              3, 0.8,
-              7, 1.4,
-              12, 2.0
-            ],
+            'circle-stroke-width': 1.2,
             'circle-stroke-color': '#ffffff',
-            'circle-opacity': 0.95
+            'circle-opacity': 1.0
           }
         });
 
         // Hover on Individual Project Dots
         m.on('mousemove', 'project-dots', (e) => {
+          if (!e.features || !e.features.length) return;
           m.getCanvas().style.cursor = 'pointer';
           const p = e.features[0].properties;
 
@@ -577,6 +605,7 @@ export default function IntelligenceMap({
         });
 
         m.on('click', 'project-dots', (e) => {
+          if (!e.features || !e.features.length) return;
           const p = e.features[0].properties;
           if (onSelectConstituency) {
             onSelectConstituency({ pc_id: p.pc_id, pc_name: p.pc_name, st_name: p.state });
@@ -600,6 +629,9 @@ export default function IntelligenceMap({
 
     if (m.getLayer('project-dots')) {
       m.setLayoutProperty('project-dots', 'visibility', showProjectDots ? 'visible' : 'none');
+    }
+    if (m.getLayer('project-dots-glow')) {
+      m.setLayoutProperty('project-dots-glow', 'visibility', showProjectDots ? 'visible' : 'none');
     }
     if (m.getLayer('centroids-heatmap')) {
       m.setLayoutProperty('centroids-heatmap', 'visibility', showHeatmap ? 'visible' : 'none');
@@ -650,6 +682,13 @@ export default function IntelligenceMap({
           ['==', ['downcase', ['get', 'norm_state']], normState]
         ]);
       }
+      if (m.getLayer('project-dots-glow')) {
+        m.setFilter('project-dots-glow', [
+          'any',
+          ['==', ['downcase', ['get', 'state']], normState],
+          ['==', ['downcase', ['get', 'norm_state']], normState]
+        ]);
+      }
 
       // Dim national states
       if (m.getLayer('states-fill')) {
@@ -673,10 +712,13 @@ export default function IntelligenceMap({
         m.setFilter('constituencies-line', ['==', 'norm_state', '']);
       }
       if (m.getLayer('centroid-bubbles')) {
-        m.setFilter('centroid-bubbles', null); // Show all centroids!
+        m.setFilter('centroid-bubbles', null);
       }
       if (m.getLayer('project-dots')) {
-        m.setFilter('project-dots', null); // Show all project dots across India!
+        m.setFilter('project-dots', null);
+      }
+      if (m.getLayer('project-dots-glow')) {
+        m.setFilter('project-dots-glow', null);
       }
       if (m.getLayer('states-fill')) {
         m.setPaintProperty('states-fill', 'fill-opacity', 0.65);
