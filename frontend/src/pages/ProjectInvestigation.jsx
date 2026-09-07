@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft, CheckCircle, MapPin, Copy, Scale } from 'lucide-react';
-import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet';
+import ProjectMiniMap from '../components/map/ProjectMiniMap';
 import { api, formatINR, formatPct, formatNumber, riskColor } from '../lib/api';
 import { LayerBreakdown, ReasonList, ScoreBlock, RiskBadge, LayerChip } from '../components/RiskPrimitives';
 
@@ -244,15 +244,12 @@ export default function ProjectInvestigation() {
             </div>
             {p.geo_lat && p.geo_lon ? (
               <div style={{ height: 200, borderRadius: 6, overflow: 'hidden' }}>
-                <MapContainer center={[p.geo_lat, p.geo_lon]} zoom={9} style={{ height: '100%', width: '100%' }}>
-                  <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
-                  <CircleMarker
-                    center={[p.geo_lat, p.geo_lon]} radius={7}
-                    fillColor={riskColor(p.risk_band)} color="white" weight={2} fillOpacity={1}
-                  >
-                    <Popup>{p.work_code}</Popup>
-                  </CircleMarker>
-                </MapContainer>
+                <ProjectMiniMap 
+                  lat={p.geo_lat} 
+                  lon={p.geo_lon} 
+                  workCode={p.work_code} 
+                  riskColor={riskColor(p.risk_band)} 
+                />
               </div>
             ) : (
               <p className="muted">No mapped constituency for this work.</p>
