@@ -136,13 +136,23 @@ export default function IntelligenceMap({
     }
   };
 
-  // Fetch All Spatial Datasets
+  // Fetch All Spatial Datasets with infallible offline/online fallback
   useEffect(() => {
     if (!mapLoaded || !map.current) return;
 
+    const fetchGeo = async (endpoint, fallbackPath) => {
+      try {
+        const res = await fetch(`${API_BASE}${endpoint}`);
+        if (res.ok) return await res.json();
+      } catch (e) {
+        // Fallback to static bundled geo data if backend is asleep or unreachable
+      }
+      const fallbackRes = await fetch(fallbackPath);
+      return await fallbackRes.json();
+    };
+
     // 1. Fetch State Boundaries
-    fetch(`${API_BASE}/api/map/boundaries/states`)
-      .then(r => r.json())
+    fetchGeo('/api/map/boundaries/states', '/geo_data/india_states.json')
       .then(data => {
         rawStateGeo.current = data;
         updateStateLayers();
@@ -150,8 +160,7 @@ export default function IntelligenceMap({
       .catch(err => console.error('Failed to load state boundaries:', err));
 
     // 2. Fetch PC Boundaries
-    fetch(`${API_BASE}/api/map/boundaries/constituencies`)
-      .then(r => r.json())
+    fetchGeo('/api/map/boundaries/constituencies', '/geo_data/india_constituencies.json')
       .then(data => {
         rawPCGeo.current = data;
         updatePCLayers();
@@ -159,8 +168,7 @@ export default function IntelligenceMap({
       .catch(err => console.error('Failed to load PC boundaries:', err));
 
     // 3. Fetch Constituency Centroid Points
-    fetch(`${API_BASE}/api/map/centroids`)
-      .then(r => r.json())
+    fetchGeo('/api/map/centroids', '/geo_data/india_centroids.json')
       .then(data => {
         rawCentroidsGeo.current = data;
         updateCentroidLayers();
@@ -168,8 +176,7 @@ export default function IntelligenceMap({
       .catch(err => console.error('Failed to load centroids:', err));
 
     // 4. Fetch Project Location Points (All Project Dots)
-    fetch(`${API_BASE}/api/map/project-points?limit=25000`)
-      .then(r => r.json())
+    fetchGeo('/api/map/project-points?limit=25000', '/geo_data/india_project_points.json')
       .then(data => {
         rawProjectPointsGeo.current = data;
         updateProjectPointLayers();
