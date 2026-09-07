@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mplads-sentinel-api
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && python init_db.py"
+    startCommand: "uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT"
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: MPLADS_EMBEDDING_BACKEND
+        value: tfidf
