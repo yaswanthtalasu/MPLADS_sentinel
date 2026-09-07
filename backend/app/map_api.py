@@ -352,6 +352,98 @@ def get_centroids_geojson(
         conn.close()
 
 
+@router.get("/project-points")
+def get_project_points_geojson(
+    state: Optional[str] = None,
+    fiscal_year: Optional[str] = None,
+    category: Optional[str] = None,
+    status: Optional[str] = None,
+    risk_band: Optional[str] = None,
+    limit: int = Query(15000, le=50000)
+):
+    """
+    Returns GeoJSON FeatureCollection of individual project location points with risk details.
+    """
+    import math
+    import hashlib
+
+    where_sql, params = build_filter_clause(state, fiscal_year, category, status, risk_band)
+    conn = get_db_connection()
+    try:
+        query = f"""
+            SELECT 
+                p.work_code,
+                p.work_category,
+                p.activity_name,
+                p.amount_disbursed,
+                p.risk_score,
+                p.risk_band,
+                p.state,
+                g.pc_id,
+                g.pc_name,
+                g.geo_lat,
+                g.geo_lon,
+                p.investigation_status
+            FROM projects p
+            JOIN project_geography g ON p.work_code = g.work_code
+            WHERE g.geo_lat IS NOT NULL AND g.geo_lon IS NOT NULL AND {where_sql}
+            ORDER BY p.risk_score DESC
+            LIMIT ?
+        """
+        rows = conn.execute(query, params + [limit]).fetchall()
+
+        features = []
+        for r in rows:
+            wcode = r[0]
+            cat = r[1]
+            act = r[2]
+            amt = r[3] or 0
+            risk_score = round(r[4] or 0, 1)
+            risk_band_val = r[5] or "Low"
+            st = r[6]
+            pcid = r[7]
+            pcname = r[8]
+            base_lat = r[9]
+            base_lon = r[10]
+            inv_stat = r[11] or "Unassigned"
+
+            # Deterministic radial offset (up to ~6 km radius) around constituency centroid
+            h = int(hashlib.md5(wcode.encode('utf-8')).hexdigest()[:8], 16)
+            angle = (h % 360) * (math.pi / 180.0)
+            radius = math.sqrt(((h >> 8) % 1000) / 1000.0) * 0.065
+            lat = round(base_lat + radius * math.sin(angle), 6)
+            lon = round(base_lon + (radius * math.cos(angle) / 0.94), 6)
+
+            features.append({
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [lon, lat]
+                },
+                "properties": {
+                    "work_code": wcode,
+                    "category": cat,
+                    "activity_name": act or "MPLADS Project",
+                    "amount_disbursed": amt,
+                    "amount_lakh": round(amt / 1e5, 2),
+                    "risk_score": risk_score,
+                    "risk_band": risk_band_val,
+                    "state": st,
+                    "norm_state": st.strip().lower() if st else "",
+                    "pc_id": pcid,
+                    "pc_name": pcname,
+                    "investigation_status": inv_stat
+                }
+            })
+
+        return JSONResponse(content={
+            "type": "FeatureCollection",
+            "features": features
+        })
+    finally:
+        conn.close()
+
+
 @router.get("/boundaries/states")
 def get_state_boundaries():
     """
