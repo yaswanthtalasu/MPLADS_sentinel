@@ -54,33 +54,7 @@ export default function Methodology() {
         </div>
       </div>
 
-      <div className="card">
-        <h2 className="card-title">Anti-Leakage Policy</h2>
-        <p className="muted" style={{ marginBottom: 12 }}>
-          The source dataset ships with a rule-based risk score and a set of pre-computed
-          anomaly flags. Feeding those into a new risk model would mean training a risk
-          detector on the output of a risk detector &mdash; the new score would simply
-          re-learn the old rules and look accurate for the wrong reason.
-        </p>
-        <div className="callout excluded" style={{ marginBottom: 12 }}>
-          <strong>Excluded from every model input:</strong>
-          <div style={{ marginTop: 8, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-            {meta.excluded_leakage_columns.map((c) => <code className="col" key={c}>{c}</code>)}
-            {meta.leakage_prefixes.map((c) => <code className="col" key={c}>{c}*</code>)}
-            <code className="col">*_loo</code>
-          </div>
-        </div>
-        <p className="muted">
-          The pipeline is <strong>raw data &rarr; our feature engineering &rarr; our models &rarr; risk
-          engine</strong>. The legacy score is retained in the database and shown on each
-          investigation page purely as an independent comparison.
-          <br /><br />
-          <code className="col">fraud_label</code> is <code className="col">UNAVAILABLE</code> for
-          all {meta.n_projects.toLocaleString('en-IN')} records, so there is nothing honest to
-          train a supervised classifier on. The engine detects <em>unusual</em>; a human decides
-          whether unusual means wrong.
-        </p>
-      </div>
+     
 
       <div className="card">
         <h2 className="card-title">Peer Group Ladder</h2>
