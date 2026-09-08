@@ -249,7 +249,7 @@ def get_map_summary(
                 "centroid_lat": lat,
                 "centroid_lon": lon,
                 "coordinate_type": "CONSTITUENCY_CENTROID",
-                "geo_source": "DataMeet ECI Delimitation 2019",
+                "geo_source": "DataMeet ECI Delimitation 2024",
                 "project_count": count,
                 "project_share_pct": round((count / total_projects) * 100, 2),
                 "total_disbursed_cr": disbursed_cr,

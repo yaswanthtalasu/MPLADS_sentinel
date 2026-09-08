@@ -26,10 +26,7 @@ export default function Methodology() {
   return (
     <div>
       <h1 className="card-title" style={{ fontSize: '1.5rem', marginBottom: 2 }}>How the Risk Score is Built</h1>
-      <p className="muted" style={{ marginBottom: 24 }}>
-        Built {meta.built_at} &middot; {meta.n_projects.toLocaleString('en-IN')} works &middot;
-        embeddings: <code className="col">{meta.embedding_backend}</code>
-      </p>
+      
 
       <div className="callout warn" style={{ marginBottom: 24 }}>
         <strong>This is not a fraud predictor.</strong> {meta.note}
