@@ -191,7 +191,7 @@ STRONG_DUPLICATE_THRESHOLD = 0.97
 # stated explicitly in the API response so the map is never over-claimed.
 SPATIAL_OVERLAP_SIM_THRESHOLD = 0.75
 SPATIAL_RESOLUTION_NOTE = (
-    "Distances are computed between official ECI 2019 constituency centroids, "
+    "Distances are computed between official ECI 2024 constituency centroids, "
     "not surveyed project locations. Co-location is therefore evidence of "
     "possible functional overlap within a constituency, not proof of two works "
     "at the same site."
