@@ -50,7 +50,7 @@ export default function App() {
               Six-Layer Risk Intelligence for MPLADS Works
             </div>
             <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>
-              Official ECI 2024 Delimitation · No synthetic coordinates · Anomaly detection, not fraud prediction
+              Official ECI 2024 Delimitation 
             </div>
           </div>
           <div className="page-container">
